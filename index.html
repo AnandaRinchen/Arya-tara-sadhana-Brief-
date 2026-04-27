@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="The Sadhana of the Four-Mandala Ritual of Arya Tara — A Trilingual Parallel Edition (Tibetan · English · Chinese). Compiled and Edited by Khenpo Kunga Rinchen." />
+<title>Arya Tara Four-Mandala Sadhana · 至尊聖度母四壇城供養儀軌</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+TC:wght@300;400;500;600;700&family=Noto+Serif+Tibetan:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --paper:        #f4ead5;
+    --paper-deep:   #ebdebf;
+    --paper-shadow: #d9c79d;
+    --ink:          #2b211a;
+    --ink-soft:     #5a4636;
+    --ink-faint:    #8a7558;
+    --gold:         #b08338;
+    --gold-deep:    #8a5e21;
+    --gold-light:   #d4ae5a;
+    --jade:         #5d7a5a;
+    --jade-soft:    #93a78a;
+    --vermilion:    #a64030;
+    --line:         rgba(138, 94, 33, 0.25);
+    --line-soft:    rgba(138, 94, 33, 0.12);
+    --shadow:       0 1px 2px rgba(60,40,20,0.06), 0 6px 20px rgba(60,40,20,0.06);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: 'EB Garamond', 'Cormorant Garamond', Georgia, serif;
+    color: var(--ink);
+    background-color: var(--paper);
+    background-image:
+      radial-gradient(ellipse at top left, rgba(212,174,90,0.10), transparent 60%),
+      radial-gradient(ellipse at bottom right, rgba(93,122,90,0.08), transparent 60%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' seed='5'/><feColorMatrix values='0 0 0 0 0.55  0 0 0 0 0.40  0 0 0 0 0.20  0 0 0 0.07 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    line-height: 1.55;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ========== Tibetan & Chinese type ========== */
+  .tib {
+    font-family: 'Noto Serif Tibetan', 'EB Garamond', serif;
+    font-size: 1.35em;
+    line-height: 2.1;
+    color: var(--ink);
+    letter-spacing: 0.01em;
+  }
+  .zh {
+    font-family: 'Noto Serif TC', 'EB Garamond', serif;
+    font-size: 1.05em;
+    line-height: 1.95;
+    color: var(--ink);
+    letter-spacing: 0.04em;
+  }
+  .phon {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 0.98em;
+    line-height: 1.7;
+  }
+  .en {
+    font-family: 'EB Garamond', 'Cormorant Garamond', serif;
+    font-size: 1.05em;
+    line-height: 1.7;
+    color: var(--ink);
+  }
+  .en em, .zh em { font-style: italic; color: var(--ink-soft); }
+
+  /* ========== Layout ========== */
+  .layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    min-height: 100vh;
+  }
+
+  /* ========== Sidebar / Index ========== */
+  aside.toc {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 2.2rem 1.4rem 2rem 1.8rem;
+    border-right: 1px solid var(--line);
+    background:
+      linear-gradient(180deg, rgba(244,234,213,0.95), rgba(235,222,191,0.95));
+    backdrop-filter: blur(6px);
+    z-index: 10;
+  }
+  aside.toc::-webkit-scrollbar { width: 6px; }
+  aside.toc::-webkit-scrollbar-thumb { background: var(--line); border-radius: 3px; }
+
+  .toc-mark {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+    margin-bottom: 0.4rem;
+  }
+  .toc-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.45rem;
+    font-weight: 500;
+    line-height: 1.25;
+    color: var(--ink);
+    margin: 0 0 0.3rem 0;
+    font-style: italic;
+  }
+  .toc-sub {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    margin-bottom: 1.6rem;
+  }
+  .toc-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--line), transparent);
+    margin: 1rem 0 1.2rem;
+  }
+  .toc-group { margin-bottom: 1.4rem; }
+  .toc-group-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--gold-deep);
+    margin-bottom: 0.55rem;
+    padding-left: 0.2rem;
+  }
+  aside.toc ol { list-style: none; padding: 0; margin: 0; counter-reset: toc; }
+  aside.toc li { margin: 0; }
+  aside.toc a {
+    display: block;
+    padding: 0.32rem 0.5rem 0.32rem 1.6rem;
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-left: 1px solid transparent;
+    transition: all 0.25s ease;
+    line-height: 1.35;
+    position: relative;
+  }
+  aside.toc a:hover {
+    color: var(--gold-deep);
+    border-left-color: var(--gold);
+    background: rgba(176,131,56,0.05);
+  }
+  aside.toc a.active {
+    color: var(--gold-deep);
+    border-left-color: var(--gold);
+    font-weight: 500;
+  }
+  aside.toc .num {
+    position: absolute;
+    left: 0.4rem;
+    color: var(--gold-light);
+    font-size: 0.78rem;
+    font-variant-numeric: tabular-nums;
+    font-style: italic;
+  }
+
+  /* ========== Main column ========== */
+  main {
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* ========== Cover ========== */
+  .cover {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    text-align: center;
+    position: relative;
+    background-image:
+      radial-gradient(circle at center, rgba(244,234,213,0) 30%, rgba(217,199,157,0.4) 100%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.6' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.55  0 0 0 0 0.40  0 0 0 0 0.20  0 0 0 0.06 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  }
+
+  .cover-ornament {
+    width: min(620px, 90%);
+    margin-bottom: 1.5rem;
+    opacity: 0.85;
+  }
+
+  .cover-mark {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.45em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+    margin-bottom: 1rem;
+  }
+
+  .cover h1 {
+    font-family: 'Cormorant Garamond', 'EB Garamond', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: clamp(2rem, 4.5vw, 3.4rem);
+    color: var(--ink);
+    margin: 0 0 0.4rem 0;
+    line-height: 1.15;
+    max-width: 22ch;
+  }
+  .cover .subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    color: var(--ink-soft);
+    font-style: italic;
+    margin-bottom: 1rem;
+    letter-spacing: 0.02em;
+  }
+  .cover .tib-title {
+    font-family: 'Noto Serif Tibetan', serif;
+    font-size: clamp(1.3rem, 2.3vw, 1.7rem);
+    color: var(--ink);
+    margin: 0.8rem 0 0.6rem;
+    line-height: 1.9;
+  }
+  .cover .zh-title {
+    font-family: 'Noto Serif TC', serif;
+    font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+    color: var(--ink);
+    letter-spacing: 0.12em;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+
+  .cover-rule {
+    width: 80px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 1.4rem auto;
+  }
+
+  .cover-credit {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 1rem;
+    margin: 0.2rem 0;
+  }
+  .cover-credit-zh {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--ink-soft);
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+  }
+
+  .cover-scroll-cue {
+    position: absolute;
+    bottom: 2.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+    opacity: 0.7;
+    animation: pulse 2.6s ease-in-out infinite;
+  }
+  .cover-scroll-cue::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 28px;
+    margin: 0.8rem auto 0;
+    background: linear-gradient(180deg, var(--gold), transparent);
+  }
+  @keyframes pulse {
+    0%,100% { opacity: 0.45; }
+    50% { opacity: 0.85; }
+  }
+
+  /* ========== Section structure ========== */
+  .section {
+    padding: 4.5rem 4rem 3.5rem;
+    max-width: 920px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--line-soft);
+    position: relative;
+  }
+  .section:last-of-type { border-bottom: none; }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid var(--line-soft);
+    position: relative;
+  }
+  .section-header::after {
+    content: '❖';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--paper);
+    padding: 0 12px;
+    color: var(--gold);
+    font-size: 1rem;
+  }
+
+  .section-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 0.78rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+    margin-bottom: 0.6rem;
+  }
+  .section-title-en {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--ink);
+    margin: 0 0 0.35rem 0;
+    line-height: 1.2;
+  }
+  .section-title-zh {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 1.25rem;
+    color: var(--ink-soft);
+    letter-spacing: 0.1em;
+    margin: 0;
+    font-weight: 400;
+  }
+  .section-title-tib {
+    font-family: 'Noto Serif Tibetan', serif;
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+    margin: 0.45rem 0 0;
+    line-height: 1.8;
+  }
+
+  /* ========== Verse cards ========== */
+  .verse {
+    margin-bottom: 2.4rem;
+    padding: 1.8rem 2rem 1.6rem;
+    background: rgba(255, 251, 240, 0.45);
+    border: 1px solid var(--line-soft);
+    border-radius: 2px;
+    position: relative;
+    box-shadow: var(--shadow);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  .verse:hover {
+    box-shadow: 0 1px 2px rgba(60,40,20,0.06), 0 12px 30px rgba(60,40,20,0.10);
+  }
+  .verse::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px; height: 100%;
+    background: linear-gradient(180deg, var(--gold-light), var(--gold), var(--gold-deep));
+    border-radius: 2px 0 0 2px;
+    opacity: 0.7;
+  }
+
+  .verse-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.32em;
+    color: var(--gold-deep);
+    margin-bottom: 0.9rem;
+    display: block;
+  }
+
+  .verse > * + * { margin-top: 0.9rem; }
+
+  /* praise number medallion (for 21 praises) */
+  .praise-medal {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--gold-deep);
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+  }
+  .praise-medal .roman {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px; height: 32px;
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    font-size: 0.78rem;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--gold-deep);
+    letter-spacing: 0.04em;
+  }
+
+  /* mantra special styling */
+  .mantra {
+    text-align: center;
+    padding: 1.2rem 1rem;
+    border-top: 1px solid var(--line-soft);
+    border-bottom: 1px solid var(--line-soft);
+    margin: 1rem 0;
+    background: linear-gradient(180deg, rgba(212,174,90,0.06), transparent);
+  }
+  .mantra .en {
+    font-variant: small-caps;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+    color: var(--gold-deep);
+  }
+
+  /* small instruction note */
+  .note {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 0.92em;
+    color: var(--ink-faint);
+    text-align: center;
+    margin-top: 0.6rem;
+  }
+
+  /* ========== Footer / Colophon ========== */
+  .colophon {
+    padding: 4rem 2rem 5rem;
+    text-align: center;
+    background: linear-gradient(180deg, transparent, rgba(217,199,157,0.4));
+    border-top: 1px solid var(--line);
+  }
+  .colophon-rule {
+    width: 100px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 0 auto 1.5rem;
+  }
+  .colophon p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--ink-soft);
+    margin: 0.4rem 0;
+    font-size: 0.95rem;
+  }
+  .colophon .seal {
+    color: var(--gold);
+    font-size: 1.2rem;
+    margin: 0.6rem 0;
+  }
+
+  /* ========== Reading progress bar ========== */
+  .progress {
+    position: fixed;
+    top: 0; left: 280px; right: 0;
+    height: 2px;
+    background: transparent;
+    z-index: 50;
+  }
+  .progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--gold-light), var(--gold), var(--gold-deep));
+    transition: width 0.1s linear;
+  }
+
+  /* ========== Top button ========== */
+  .top-btn {
+    position: fixed;
+    bottom: 2rem; right: 2rem;
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: var(--paper-deep);
+    border: 1px solid var(--gold);
+    color: var(--gold-deep);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 40;
+    font-size: 1rem;
+  }
+  .top-btn.show { opacity: 1; pointer-events: auto; }
+  .top-btn:hover { transform: translateY(-3px); background: var(--gold-light); color: white; }
+
+  /* ========== Mobile ========== */
+  .menu-toggle {
+    display: none;
+    position: fixed;
+    top: 1rem; left: 1rem;
+    z-index: 100;
+    background: var(--paper-deep);
+    border: 1px solid var(--gold);
+    color: var(--gold-deep);
+    padding: 0.5rem 0.85rem;
+    border-radius: 2px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+  }
+
+  @media (max-width: 900px) {
+    .layout { grid-template-columns: 1fr; }
+    aside.toc {
+      position: fixed;
+      left: 0; top: 0;
+      width: 84%; max-width: 320px;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+      z-index: 90;
+      box-shadow: 4px 0 20px rgba(0,0,0,0.15);
+    }
+    aside.toc.open { transform: translateX(0); }
+    .menu-toggle { display: block; }
+    .progress { left: 0; }
+    .section { padding: 3rem 1.4rem 2.5rem; }
+    .verse { padding: 1.3rem 1.2rem; }
+    .cover { padding: 5rem 1.4rem 4rem; }
+    body { font-size: 16px; }
+  }
+
+  /* Print styles */
+  @media print {
+    aside.toc, .progress, .top-btn, .menu-toggle, .cover-scroll-cue { display: none; }
+    .layout { grid-template-columns: 1fr; }
+    .section { page-break-inside: avoid; padding: 2rem 1rem; }
+    .verse { page-break-inside: avoid; box-shadow: none; }
+    body { background: white; }
+  }
+
+  /* Subtle entrance animation for sections */
+  .section { opacity: 0; transform: translateY(14px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .section.visible { opacity: 1; transform: translateY(0); }
+
+  /* Decorative double line under section */
+  .double-line {
+    width: 60%;
+    margin: 2.5rem auto 0;
+    height: 4px;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    position: relative;
+  }
+  .double-line::after {
+    content: '✦';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--paper);
+    padding: 0 8px;
+    color: var(--gold);
+    font-size: 0.8rem;
+  }
+</style>
+</head>
+<body>
+
+<button class="menu-toggle" onclick="document.querySelector('aside.toc').classList.toggle('open')">☰ Index</button>
+
+<div class="progress"><div class="progress-fill" id="progressFill"></div></div>
+
+<div class="layout">
+
+<!-- ============ SIDEBAR / INDEX ============ -->
+<aside class="toc" id="toc">
+  <div class="toc-mark">Sadhana · 儀軌</div>
+  <h2 class="toc-title">Arya Tārā</h2>
+  <div class="toc-sub">至尊聖度母四壇城</div>
+  <div class="toc-divider"></div>
+
+  <div class="toc-group">
+    <div class="toc-group-label">Opening · 啟修</div>
+    <ol>
+      <li><a href="#cover"><span class="num">·</span>Title Page · 扉頁</a></li>
+      <li><a href="#lineage"><span class="num">I</span>Lineage Supplication · 傳承祈請</a></li>
+      <li><a href="#consecration"><span class="num">II</span>Consecration of Offerings · 供品加持</a></li>
+      <li><a href="#refuge"><span class="num">III</span>Refuge & Bodhicitta · 皈依發心</a></li>
+      <li><a href="#fourimm"><span class="num">IV</span>Four Immeasurables · 四無量心</a></li>
+    </ol>
+  </div>
+
+  <div class="toc-group">
+    <div class="toc-group-label">Mandala · 壇城</div>
+    <ol>
+      <li><a href="#invoke-buddhas"><span class="num">V</span>Invocation of Buddhas · 迎請諸佛</a></li>
+      <li><a href="#prostration"><span class="num">VI</span>Prostration to Three Jewels · 三寶頂禮</a></li>
+      <li><a href="#mandala-1"><span class="num">VII</span>First Mandala Offering · 初供壇城</a></li>
+      <li><a href="#invoke-tara"><span class="num">VIII</span>Invocation of Tārā · 迎請度母</a></li>
+      <li><a href="#tara-offerings"><span class="num">IX</span>Offerings to Tārā · 度母供養</a></li>
+      <li><a href="#mandala-2"><span class="num">X</span>Second Mandala Offering · 再供壇城</a></li>
+    </ol>
+  </div>
+
+  <div class="toc-group">
+    <div class="toc-group-label">Twenty-One Praises · 二十一禮讚</div>
+    <ol>
+      <li><a href="#praises"><span class="num">·</span>Opening Homage · 啟讚</a></li>
+      <li><a href="#praise-1"><span class="num">1</span>Swift Heroine · 速勇母</a></li>
+      <li><a href="#praise-2"><span class="num">2</span>Autumn Moon · 秋月母</a></li>
+      <li><a href="#praise-3"><span class="num">3</span>Golden Blue Lotus · 紫金蓮母</a></li>
+      <li><a href="#praise-4"><span class="num">4</span>Victorious Ushnisha · 頂髻母</a></li>
+      <li><a href="#praise-5"><span class="num">5</span>TUTTĀRE & HŪṂ · 充遍母</a></li>
+      <li><a href="#praise-6"><span class="num">6</span>Worshipped by Gods · 天供母</a></li>
+      <li><a href="#praise-7"><span class="num">7</span>Destroyer of Magic · 破幻母</a></li>
+      <li><a href="#praise-8"><span class="num">8</span>Conqueror of Māras · 伏魔母</a></li>
+      <li><a href="#praise-9"><span class="num">9</span>Three Jewels Mudrā · 三寶印母</a></li>
+      <li><a href="#praise-10"><span class="num">10</span>Radiant Diadem · 歡喜母</a></li>
+      <li><a href="#praise-11"><span class="num">11</span>Summoner of Protectors · 勾召母</a></li>
+      <li><a href="#praise-12"><span class="num">12</span>Crescent Moon · 月冠母</a></li>
+      <li><a href="#praise-13"><span class="num">13</span>Fire of Final Aeon · 劫火母</a></li>
+      <li><a href="#praise-14"><span class="num">14</span>Pounder of Earth · 震地母</a></li>
+      <li><a href="#praise-15"><span class="num">15</span>Peaceful Nirvāṇa · 寂靜母</a></li>
+      <li><a href="#praise-16"><span class="num">16</span>Liberator from HŪṂ · 明咒母</a></li>
+      <li><a href="#praise-17"><span class="num">17</span>Shaker of Three Realms · 震動母</a></li>
+      <li><a href="#praise-18"><span class="num">18</span>Dispeller of Poison · 除毒母</a></li>
+      <li><a href="#praise-19"><span class="num">19</span>Dispeller of Strife · 除諍母</a></li>
+      <li><a href="#praise-20"><span class="num">20</span>Dispeller of Fevers · 除疫母</a></li>
+      <li><a href="#praise-21"><span class="num">21</span>Destroyer of Evil Spirits · 至勝母</a></li>
+    </ol>
+  </div>
+
+  <div class="toc-group">
+    <div class="toc-group-label">Mantra & Aspirations · 心咒發願</div>
+    <ol>
+      <li><a href="#sevenlimb"><span class="num">XI</span>Seven-Limb Prayer · 七支供養</a></li>
+      <li><a href="#mantra"><span class="num">XII</span>Root Mantra · 根本心咒</a></li>
+      <li><a href="#aspirations"><span class="num">XIII</span>Aspirations · 發願文</a></li>
+      <li><a href="#vajrasattva"><span class="num">XIV</span>Hundred-Syllable Mantra · 百字明</a></li>
+    </ol>
+  </div>
+
+  <div class="toc-group">
+    <div class="toc-group-label">Conclusion · 結行</div>
+    <ol>
+      <li><a href="#forgiveness"><span class="num">XV</span>Prayer for Forgiveness · 懺悔祈請</a></li>
+      <li><a href="#remain"><span class="num">XVI</span>Request to Remain · 祈請安住</a></li>
+      <li><a href="#dedication"><span class="num">XVII</span>Dedication · 迴向發願</a></li>
+      <li><a href="#auspicious"><span class="num">XVIII</span>Auspiciousness · 吉祥偈</a></li>
+      <li><a href="#spirits"><span class="num">XIX</span>Prayer for Spirits · 迴向地神</a></li>
+      <li><a href="#final"><span class="num">XX</span>Final Auspiciousness · 究竟吉祥</a></li>
+    </ol>
+  </div>
+
+  <div class="toc-divider"></div>
+  <p style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:0.78rem; color:var(--ink-faint); text-align:center; margin:0;">
+    Compiled & Edited by<br>
+    Khenpo Kunga Rinchen<br>
+    堪布 根嘎仁波切 編校
+  </p>
+</aside>
+
+<!-- ============ MAIN ============ -->
+<main>
+
+<!-- ===== COVER ===== -->
+<section class="cover" id="cover">
+  <svg class="cover-ornament" viewBox="0 0 600 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g fill="none" stroke="#8a5e21" stroke-width="0.8" opacity="0.65">
+      <path d="M 40 70 Q 80 30, 120 60 T 200 60 Q 240 30, 280 60 Q 300 35, 320 60 Q 360 30, 400 60 T 480 60 Q 520 30, 560 70" />
+      <circle cx="120" cy="60" r="3" fill="#b08338"/>
+      <circle cx="200" cy="60" r="3" fill="#b08338"/>
+      <circle cx="300" cy="48" r="4" fill="#b08338"/>
+      <circle cx="400" cy="60" r="3" fill="#b08338"/>
+      <circle cx="480" cy="60" r="3" fill="#b08338"/>
+      <path d="M 290 50 L 300 38 L 310 50 L 305 60 L 295 60 Z" fill="#d4ae5a" opacity="0.7"/>
+      <path d="M 30 65 q -10 10, 0 20 q 10 -10, 0 -20 z" fill="#b08338" opacity="0.5"/>
+      <path d="M 570 65 q 10 10, 0 20 q -10 -10, 0 -20 z" fill="#b08338" opacity="0.5"/>
+    </g>
+  </svg>
+
+  <div class="cover-mark">A Trilingual Parallel Edition · 三語對照本</div>
+
+  <div class="tib-title">༄༅། །རྗེ་བཙུན་སྒྲོལ་མའི་སྒྲུབ་ཐབས་མཎྜལ་བཞི་ཆོག</div>
+
+  <h1>The Sadhana of the Four-Mandala<br>Ritual of Ārya Tārā</h1>
+
+  <div class="zh-title">至尊聖度母四壇城供養儀軌</div>
+
+  <div class="cover-rule"></div>
+
+  <p class="cover-credit">Compiled and Edited by Khenpo Kunga Rinchen</p>
+  <p class="cover-credit-zh">堪布 根嘎仁波切 編校</p>
+
+  <div class="cover-scroll-cue">Begin · 啟修</div>
+</section>
+
+
+<!-- ============ I. LINEAGE ============ -->
+<section class="section" id="lineage">
+  <div class="section-header">
+    <div class="section-num">I · Section One</div>
+    <h2 class="section-title-en">Supplication to the Lineage Gurus</h2>
+    <p class="section-title-zh">傳承祖師祈請文</p>
+    <p class="section-title-tib">བླ་བརྒྱུད་གསོལ་འདེབས།</p>
+  </div>
+
+  <article class="verse">
+    <span class="verse-label">Root Guru · 根本上師</span>
+    <p class="tib">༄༅། །དཔལ་ལྡན་རྩ་བའི་བླ་མ་རིན་པོ་ཆེ།། བདག་གི་སྤྱི་བོར་པདྨའི་གདན་བཞུགས་ལ།། བཀའ་དྲིན་ཆེན་པོའི་སྒོ་ནས་རྗེས་གཟུང་སྟེ།། སྐུ་གསུང་ཐུགས་ཀྱི་དངོས་གྲུབ་སྩལ་དུ་གསོལ།།</p>
+    <p class="phon">Pal-den tsa-wé la-ma rin-po-ché / Dak-gi chi-wor pe-mé den-zhuk la / Ka-drin chen-pö go-né jé-zung té / Ku-sung tuk-kyi ngö-drup tsal-du sol</p>
+    <p class="en">Glorious and precious root Guru, please be seated on the lotus throne upon the crown of my head. Hold me in your care through your great kindness, and bestow the accomplishments of Body, Speech, and Mind.</p>
+    <p class="zh">具德根本上師寶，蓮座安住我頂上。以大恩門垂攝受，祈賜身語意悉地。</p>
+  </article>
+
+  <article class="verse">
+    <span class="verse-label">King of the Shākyas · 釋迦王尊</span>
+    <p class="tib">ཐབས་མཁས་ཐུགས་རྗེས་ཤཱཀྱའི་རིགས་སུ་འཁྲུངས། །གཞན་གྱིས་མི་ཐུབ་བདུད་ཀྱི་དཔུང་འཇོམས་པ།། གསེར་གྱི་ལྷུན་པོ་ལྟ་བུར་བརྗིད་པའི་སྐུ། །ཤཱཀྱའི་རྒྱལ་པོ་ཁྱོད་ལ་ཕྱག་འཚལ་ལོ།།</p>
+    <p class="phon">Tap-khé tuk-jé sha-kyé rik-su trung / Zhen-gyi mi-tup dü-kyi pung-jom-pa / Ser-gyi lhün-po ta-bur ji-pé ku / Sha-kyé gyal-po khyö-la chak-tsal-lo</p>
+    <p class="en">Through skilful means and compassion, born into the Shākya lineage; invincible conqueror of the hosts of Māra, whose body blazes with the majesty of a golden mountain — to you, King of the Shākyas, I pay homage!</p>
+    <p class="zh">方便大悲生釋族，無能勝者伏魔軍。金山巍峨威德身，釋迦王尊前頂禮。</p>
+  </article>
+
+  <article class="verse">
+    <span class="verse-label">Guru Rinpoche · 蓮華生大士</span>
+    <p class="tib">དུས་གསུམ་སངས་རྒྱས་གུ་རུ་རིན་པོ་ཆེ༔ དངོས་གྲུབ་ཀུན་བདག་བདེ་བ་ཆེན་པོ་ཞབས༔ བར་ཆད་ཀུན་སེལ་བདུད་འདུལ་དྲག་པོ་རྩལ༔ གསོལ་བ་འདེབས་སོ་བྱིན་གྱིས་བརླབ་ཏུ་གསོལ༔ ཕྱི་ནང་གསང་བའི་བར་ཆད་ཞི་བ་དང༔ བསམ་པ་ལྷུན་གྱིས་འགྲུབ་པར་བྱིན་གྱིས་རློབས༔</p>
+    <p class="phon">Dü-sum sang-gyé gu-ru rin-po-ché / Ngö-drup kün-dak dé-wa chen-pö zhap / Bar-ché kün-sel dü-dül drak-po tsal / Sol-wa dep-so jin-gyi lap-tu sol / Chi-nang sang-wé bar-ché zhi-wa dang / Sam-pa lhün-gyi drup-par jin-gyi lop</p>
+    <p class="en">Guru Rinpoche, Buddha of the three times, Lord of all attainments, embodiment of Great Bliss, Dispeller of every obstacle, Wrathful Tamer of demons — I supplicate you: please grant your blessings! Pacify all outer, inner, and secret obstacles, and bless me that my aspirations be spontaneously accomplished.</p>
+    <p class="zh">三世諸佛古汝寶，一切悉地大樂尊。遣除障礙忿怒力，至誠祈禱賜加持。外內密障悉平息，加持所願任運成。</p>
+  </article>
+
+  <article class="verse">
+    <span class="verse-label">Five Sakya Forefathers · 薩迦五祖</span>
+    <p class="tib">ས་ཆེན་བླ་མ་བསོད་ནམས་རྩེ་མོ་དང་། །རྗེ་བཙུན་གྲགས་པ་ཆོས་རྗེ་པཎྜི་ཏ། །ཆོས་ཀྱི་རྒྱལ་པོ་འཕགས་པ་རིན་པོ་ཆེ། །རྗེ་བཙུན་གོང་མ་ལྔ་ལ་གསོལ་བ་འདེབས། །</p>
+    <p class="phon">Sa-chen la-ma Sö-nam Tsé-mo dang / Jé-tsün Drak-pa Chö-jé Pan-di-ta / Chö-kyi gyal-po Pak-pa Rin-po-ché / Jé-tsün gong-ma nga-la sol-wa dep</p>
+    <p class="en">To the great Sachen, to Lama Sönam Tsemo, to the venerable Drakpa Gyaltsen, to the Dharma Lord — the Paṇḍita, to the King of Dharma, the noble Phagpa Rinpoche: to the five venerable Forefathers, I supplicate!</p>
+    <p class="zh">薩千上師索南策，尊者札巴法主達。薩迦班智法王尊，帕巴仁波切前禮。五位祖師前祈禱！</p>
+  </article>
+
+  <article class="verse">
+    <span class="verse-label">Aspiration · 願文</span>
+    <p class="tib">ཁྱེད་རྣམས་བསྟོད་ཅིང་གསོལ་བ་བཏབ་པའི་མཐུས། །བདག་སོགས་གང་དུ་གནས་པའི་ས་ཕྱོགས་སུ།། ནད་གདོན་དབུལ་ཕོངས་འཐབ་རྩོད་ཞི་བ་དང་། །ཆོས་དང་བཀྲ་ཤིས་འཕེལ་བར་མཛད་དུ་གསོལ།།</p>
+    <p class="phon">Khyé-nam tö-ching sol-wa tap-pé tü / Dak-sok gang-du né-pé sa-chok su / Né-dön ül-pong tap-tsö zhi-wa dang / Chö-dang tra-shi pel-war dzé-du sol</p>
+    <p class="en">By the power of praising and supplicating you all, in whatever land we may come to dwell, may disease, demonic harm, poverty, and conflict be pacified, and may the Dharma and auspiciousness ever flourish!</p>
+    <p class="zh">讚歎祈請諸尊力，我等身居何方所。病魔貧窮鬥爭息，正法吉祥願增盛。</p>
+  </article>
+</section>
+
+
+<!-- ============ II. CONSECRATION ============ -->
+<section class="section" id="consecration">
+  <div class="section-header">
+    <div class="section-num">II · Section Two</div>
+    <h2 class="section-title-en">Consecration of the Offerings</h2>
+    <p class="section-title-zh">供品加持</p>
+    <p class="section-title-tib">མཆོད་པ་བྱིན་བརླབས།</p>
+  </div>
+
+  <article class="verse mantra">
+    <span class="verse-label">Purification Mantra · 淨化真言</span>
+    <p class="tib">ཨོཾ་ཨ་མྲྀ་ཏ་ཧཱུྃ་ཕཊ།</p>
+    <p class="en">OṂ AMṚTA HŪṂ PHAṬ!</p>
+    <p class="zh">唵 阿彌哩達 吽 呸！</p>
+  </article>
+
+  <article class="verse mantra">
+    <span class="verse-label">Emptiness Mantra · 自性清淨咒</span>
+    <p class="tib">ཨོཾ་སྭ་བྷཱ་ཝ་ཤུདྡྷཿ སརྦ་དྷརྨཱཿ སྭ་བྷཱ་ཝ་ཤུདྡྷོ྅་ཧཾ།</p>
+    <p class="en">OṂ SVABHĀVA ŚUDDHĀḤ SARVA DHARMĀḤ SVABHĀVA ŚUDDHO 'HAṂ</p>
+    <p class="zh">唵 娑巴嚩 秫馱 薩嚩 達磨 娑巴嚩 秫度 杭<br><em>一切諸法自性清淨，我亦自性清淨！</em></p>
+  </article>
+
+  <article class="verse">
+    <span class="verse-label">Generation of Offerings · 觀想供品</span>
+    <p class="tib">སྟོང་པའི་ངང་ལས་ཨོཾ་ལས་བྱུང་བའི་རིན་པོ་ཆེ་ལས་གྲུབ་པའི་སྣོད་ཡངས་ཤིང་རྒྱ་ཆེ་བ་རྣམས་ཀྱི་ནང་དུ་ཨོཾ་ཞུ་བ་ལས་བྱུང་བའི་ལྷ་རྫས་ལས་གྲུབ་པའི་མཆོད་རྫས་རྣམས་དྭངས་ཤིང་ཐོགས་པ་མེད་པ་ནམ་མཁའ་གང་བར་གྱུར།</p>
+    <p class="phon">Tong-pé ngang-lé Om-lé jung-wé rin-po-ché lé drup-pé nö yang-shing gya-ché-wa nam-kyi nang-du Om zhu-wa lé jung-wé lha-dzé lé drup-pé chö-dzé nam dang-shing tok-pa mé-pa nam-kha gang-war gyur.</p>
+    <p class="en">Out of the expanse of emptiness, from the syllable OṂ, there appear vast and spacious vessels fashioned of precious jewels. Within them, from the melting of OṂ, there arise offering articles made of celestial substances — luminous, unobstructed, filling the entirety of space.</p>
+    <p class="zh">從空性中，「唵」字出現，化為珍寶所成之廣大容器。器內「唵」字融化，現起天物所成之供品——清淨無礙，遍滿虛空。</p>
+  </article>
+
+  <article class="verse mantra">
+    <span class="verse-label">Eight Offerings · 八供真言</span>
+    <p class="tib">ཨོཾ་བཛྲ་ཨརྒྷཾ་ཨཱཿ་ཧཱུྃ། ཨོཾ་བཛྲ་པ་དྱཱཾ་ཨཱཿ་ཧཱུྃ། ཨོཾ་བཛྲ་པུཥྤེ་ཨཱཿ་ཧཱུྃ། ཨོཾ་བཛྲ་དྷཱུ་པེ་ཨཱཿ་ཧཱུྃ། ཨོཾ་བཛྲ་ཨཱ་ལོ་ཀེ་ཨཱཿ་ཧཱུྃ། ཨོཾ་བཛྲ་གནྡྷེ་ཨཱཿ་ཧཱུྃ། ཨོཾ་བཛྲ་ནཻ་ཝཱི་དྱཱ་ཨཱཿ་ཧཱུྃ། ཨོཾ་བཛྲ་ཤབྡ་ཨཱཿ་ཧཱུྃ།</p>
+    <p class="en">Oṃ Vajra Arghaṃ Āḥ Hūṃ · Oṃ Vajra Pādyaṃ Āḥ Hūṃ · Oṃ Vajra Puṣpe Āḥ Hūṃ · Oṃ Vajra Dhūpe Āḥ Hūṃ · Oṃ Vajra Āloke Āḥ Hūṃ · Oṃ Vajra Gandhe Āḥ Hūṃ · Oṃ Vajra Naivedye Āḥ Hūṃ · Oṃ Vajra Śabda Āḥ Hūṃ</p>
+    <p class="zh">唵 嚩日囉 阿伽 阿 吽（飲水）· 跛陀（濯足水）· 布瑟卑（花）· 馱布（香）· 阿盧迦（燈）· 健陀（塗香）· 乃韋底野（食）· 攝陀（樂）<br><em>結八供手印，逐一加持各供品。</em></p>
+  </article>
+
+  <article class="verse mantra">
+    <span class="verse-label">Vajra Dharma Mantra · 金剛法音咒</span>
+    <p class="tib">ཨོཾ་བཛྲ་དྷརྨ་ར་ཎི་ཏ། པྲ་ར་ཎི་ཏ། སཾ་པྲ་ར་ཎི་ཏ། སརྦ་བུདྡྷ་ཀྵེ་ཏྲ་པྲ་ཙ་ལི་ཏེ། པྲཛྙཱ་པཱ་ར་མི་ཏཱ། ནཱ་ད་སཾ་བྷ་ཝེ། བཛྲ་དྷརྨ་ཧྲྀ་ད་ཡ། སནྟོ་ཥ་ནི། ཧཱུྃ་ཧཱུྃ་ཧཱུྃ། ཧོཿ ཧོཿ ཧོཿ ཨཱ་ཁཾ་སྭཱ་ཧཱ།</p>
+    <p class="en">OṂ! The sound of the Vajra Dharma — ringing, resounding, reverberating throughout — shakes all the Buddha-fields! Born from the thunder of the Perfection of Wisdom, it delights the Vajra Dharma Heart! HŪṂ HŪṂ HŪṂ! HO HO HO! Ā KHAṂ SVĀHĀ!</p>
+    <p class="zh">唵！金剛法音——鳴、大鳴、遍大鳴——震動一切諸佛剎！般若波羅蜜多音聲所生，令金剛法心歡喜！吽吽吽　呵呵呵　阿　康　娑婆訶！</p>
+  </article>
+</section>
+
+
+<!-- ============ III. REFUGE ============ -->
+<section class="section" id="refuge">
+  <div class="section-header">
+    <div class="section-num">III · Section Three</div>
+    <h2 class="section-title-en">Refuge & Bodhicitta</h2>
+    <p class="section-title-zh">皈依與發菩提心</p>
+  </div>
+
+  <article class="verse">
+    <span class="verse-label">Recite Three Times · 念誦三次</span>
+    <p class="tib">སངས་རྒྱས་ཆོས་དང་ཚོགས་ཀྱི་མཆོག་རྣམས་ལ། །བྱང་ཆུབ་བར་དུ་བདག་ནི་སྐྱབས་སུ་མཆི། ། བདག་གིས་སྦྱིན་སོགས་བགྱིས་པའི་བསོད་ནམས་ཀྱིས། །འགྲོ་ལ་ཕན་ཕྱིར་སངས་རྒྱས་འགྲུབ་པར་ཤོག །</p>
+    <p class="phon">Sang-gyé chö-dang tsok-kyi chok-nam la / Jang-chup bar-du dak-ni kyap-su chi / Dak-gi jin-sok gyi-pé sö-nam kyi / Dro-la pen-chir sang-gyé drup-par shok</p>
+    <p class="en">In the Buddha, the Dharma, and the Supreme Assembly, I take refuge until I reach Enlightenment. By the merit of practising generosity and the other perfections, may I attain Buddhahood for the benefit of all beings.</p>
+    <p class="zh">諸佛正法賢聖僧，直至菩提我皈依。以我施等所修福，為利眾生願成佛。</p>
+  </article>
+</section>
+
+
+<!-- ============ IV. FOUR IMMEASURABLES ============ -->
+<section class="section" id="fourimm">
+  <div class="section-header">
+    <div class="section-num">IV · Section Four</div>
+    <h2 class="section-title-en">The Four Immeasurables</h2>
+    <p class="section-title-zh">四無量心</p>
+  </div>
+
+  <article class="verse">
+    <p class="tib">སེམས་ཅན་ཐམས་ཅད་བདེ་བ་དང་བདེ་བའི་རྒྱུ་དང་ལྡན་པར་གྱུར་ཅིག སྡུག་བསྔལ་དང་སྡུག་བསྔལ་གྱི་རྒྱུ་དང་བྲལ་བར་གྱུར་ཅིག སྡུག་བསྔལ་མེད་པའི་བདེ་བ་དང་མི་འབྲལ་བར་གྱུར་ཅིག ཉེ་རིང་ཆགས་སྡང་གཉིས་དང་བྲལ་བའི་བཏང་སྙོམས་ཆེན་པོ་ལ་གནས་པར་གྱུར་ཅིག</p>
+    <p class="phon">Sem-chen tam-ché dé-wa dang dé-wé gyu-dang den-par gyur-chik / Duk-ngal dang duk-ngal gyi gyu-dang dral-war gyur-chik / Duk-ngal mé-pé dé-wa dang mi-dral-war gyur-chik / Nyé-ring chak-dang nyi-dang dral-wé tang-nyom chen-po la né-par gyur-chik</p>
+    <p class="en">May all sentient beings possess happiness and the causes of happiness. May they be free from suffering and the causes of suffering. May they never be parted from the happiness that knows no suffering. May they abide in great equanimity, free from attachment to those close and aversion to those distant.</p>
+    <p class="zh">願一切有情具足安樂及安樂之因。願一切有情遠離痛苦及痛苦之因。願一切有情不離無苦之妙樂。願一切有情安住大平等捨，遠離親疏貪瞋。</p>
+  </article>
+</section>
+
+
+<!-- ============ V. INVOKE BUDDHAS ============ -->
+<section class="section" id="invoke-buddhas">
+  <div class="section-header">
+    <div class="section-num">V · Section Five</div>
+    <h2 class="section-title-en">Invocation of the Gurus & Buddhas</h2>
+    <p class="section-title-zh">迎請上師諸佛</p>
+  </div>
+
+  <article class="verse">
+    <span class="verse-label">Summoning · 召請</span>
+    <p class="tib">རང་གི་སྙིང་ག་ནས་འོོད་ཟེར་འཕྲོས་པས་བླ་མ་རྒྱལ་བ་སྲས་དང་བཅས་པ། ཨོཾ་བཛྲ་ས་མཱ་ཛཿ</p>
+    <p class="phon">Rang-gi nying-ga né ö-zer trö-pé la-ma gyal-wa sé-dang ché-pa / Oṃ Vajra Samājaḥ</p>
+    <p class="en">From my heart, rays of light stream forth, invoking the Gurus, Buddhas and Bodhisattvas. <strong>OṂ VAJRA SAMĀJAḤ!</strong></p>
+    <p class="zh">自心間放射光芒，迎請上師、諸佛及佛子聖眾。 唵 嚩日囉 薩嘛惹 扎！<br><em>結召請手印。</em></p>
+  </article>
+</section>
+
+
+<!-- ============ VI. PROSTRATION ============ -->
+<section class="section" id="prostration">
+  <div class="section-header">
+    <div class="section-num">VI · Section Six</div>
+    <h2 class="section-title-en">Prostration to the Three Jewels</h2>
+    <p class="section-title-zh">頂禮三寶</p>
+  </div>
+
+  <article class="verse">
+    <span class="verse-label">To the Gurus · 頂禮上師</span>
+    <p class="tib">སངས་རྒྱས་ཐམས་ཅད་འདུས་པའི་སྐུ། །རྡོ་རྗེ་འཛིན་པའི་ངོ་བོ་ཉིད།། དཀོན་མཆོག་གསུམ་གྱི་རྩ་བ་སྟེ། །བླ་མ་རྣམས་ལ་ཕྱག་འཚལ་ལོ།།</p>
+    <p class="phon">Sang-gyé tam-ché dü-pé ku / Dor-jé dzin-pé ngo-wo nyi / Kön-chok sum-gyi tsa-wa té / La-ma nam-la chak-tsal lo</p>
+    <p class="en">The embodiment uniting all the Buddhas, the very essence of the Vajra-Holder, the root from which the Three Jewels arise — to the Gurus, I prostrate!</p>
+    <p class="zh">一切諸佛總集身，金剛持之真實性，三寶根源即上師，敬禮一切諸上師。</p>
+  </article>
+
+  <article class="verse">
+    <span class="verse-label">To the Buddha · 頂禮如來</span>
+    <p class="tib">མགོན་པོ་ཐུགས་རྗེ་ཆེ་ལྡན་པ། །ཐམས་ཅད་མཁྱེན་པའི་སྟོན་པ་པོ། །བསོད་ནམས་ཡོན་ཏན་རྒྱ་མཚོའི་ཞིང་། །དེ་བཞིན་གཤེགས་ལ་ཕྱག་འཚལ་ལོ།།</p>
+    <p class="phon">Gön-po tuk-jé ché-den pa / Tam-ché khyen-pé tön-pa po / Sö-nam yön-ten gya-tsö zhing / Dé-zhin shek-la chak-tsal lo</p>
+    <p class="en">The Protector who possesses great compassion, the all-knowing Teacher, a field — an ocean of merit and noble qualities — to the Tathāgata, I prostrate!</p>
+    <p class="zh">怙主具足大悲心，遍知一切大導師，功德福聚如海田，如來尊前我頂禮。</p>
+  </article>
+
+  <article class="verse">
+    <span class="verse-label">To the Dharma · 頂禮正法</span>
+    <p class="tib">དག་པས་འདོད་ཆགས་བྲལ་བའི་རྒྱུ། །དགེ་བས་ངན་སོང་ལས་གྲོལ་བ། །གཅིག་ཏུ་དོན་དམ་མཆོག་གྱུར་པ། །ཞི་གྱུར་ཆོས་ལ་ཕྱག་འཚལ་ལོ།།</p>
+    <p class="phon">Dak-pé dö-chak dral-wé gyu / Gé-wé ngen-song lé drol-wa / Chik-tu dön-dam chok-gyur pa / Zhi-gyur chö-la chak-tsal lo</p>
+    <p class="en">Through purity, the cause of freedom from desire; through virtue, liberation from the lower realms; the sole, supreme, ultimate truth — to the Dharma, which is peace, I prostrate!</p>
+    <p class="zh">清淨離欲之正因，善行解脫惡趣道，唯一殊勝勝義諦，寂靜法前我頂禮。</p>
+  </article>
+
+  <article class="verse">
+    <span class="verse-label">To the Saṅgha · 頂禮僧伽</span>
+    <p class="tib">གྲོལ་ནས་གྲོལ་བའི་ལམ་ཐོབ་པ། །བསླབ་པ་དག་ལ་རབ་ཏུ་གནས། །ཞིང་གི་དམ་པ་ཡོན་ཏན་ལྡན། །དགེ་འདུན་ལ་ཡང་ཕྱག་འཚལ་ལོ།།</p>
+    <p class="phon">Dröl-né dröl-wé lam-top pa / Lab-pa dak-la rab-tu né / Zhing-gi dam-pa yön-ten den / Gé-dün la-yang chak-tsal lo</p>
+    <p class="en">Having been liberated, they have found the path of liberation; they abide fully in the pure trainings; a sacred field endowed with noble qualities — to the Saṅgha also, I prostrate!</p>
+    <p class="zh">已得解脫證解脫，安住淨戒諸學處，聖潔福田功德具，僧伽眾前亦頂禮。</p>
+  </article>
+
+  <article class="verse">
+    <span class="verse-label">Universal Homage · 普禮</span>
+    <p class="tib">ཕྱག་བྱར་འོས་པ་ཐམས་ཅད་ལ། །ཞིང་རྡུལ་ཀུན་གྱི་གྲངས་སྙེད་ཀྱི། །ལུས་བཏུད་པ་ཡིས་རྣམ་ཀུན་ཏུ། །མཆོག་ཏུ་དད་པས་ཕྱག་འཚལ་བསྟོད།།</p>
+    <p class="phon">Chak-jar ö-pa tam-ché la / Zhing-dül kün-gyi drang-nyé kyi / Lü-tü pa-yi nam-kün tu / Chok-tu dé-pé chak-tsal tö</p>
+    <p class="en">To all who are worthy of homage, with bodies as numerous as the atoms in all realms, in every way and at all times, with supreme devotion I prostrate and praise!</p>
+    <p class="zh">於諸堪受禮拜者，化身數等世界塵，以身一切時方中，至極信心敬禮讚。</p>
+  </article>
+</section>
+
+
+<!-- ============ VII. FIRST MANDALA ============ -->
+<section class="section" id="mandala-1">
+  <div class="section-header">
+    <div class="section-num">VII · Section Seven</div>
+    <h2 class="section-title-en">The First Mandala Offering</h2>
+    <p class="section-title-zh">初供壇城</p>
+  </div>
+
+  <article class="verse">
+    <span class="verse-label">Mandala Verse · 壇城偈</span>
+    <p class="tib">ས་གཞི་སྤོས་ཆུས་བྱུགས་ཤིང་མེ་ཏོག་བཀྲམ། །རི་རབ་གླིང་བཞི་ཉི་ཟླས་བརྒྱན་པ་འདི། །སངས་རྒྱས་ཞིང་དུ་དམིགས་ཏེ་ཕུལ་བ་ཡིས། །འགྲོ་ཀུན་རྣམ་དག་ཞིང་དུ་སྤྱོད་པར་ཤོག །</p>
+    <p class="phon">Sa-zhi pö-chü juk-shing mé-tok tram / Ri-rab ling-zhi nyi-dé gyen-pa di / Sang-gyé zhing-du mik-té pul-wa yi / Dro-kün nam-dak zhing-du chö-par shok</p>
+    <p class="en">The ground anointed with scented water, strewn with flowers, adorned with Mount Meru, the four continents, sun and moon — envisioning this as a Buddha-realm, I offer it, that all beings may partake of utterly pure lands!</p>
+    <p class="zh">香水塗地妙花敷，須彌四洲日月嚴，觀想佛土而供養，願諸有情享淨剎。</p>
+  </article>
+
+  <article class="verse">
+    <span class="verse-label">Supplication · 祈請</span>
+    <p class="tib">མཁྱེན་བརྩེ་ནུས་ལྡན་རྒྱལ་བ་སྲས་བཅས་རྣམས། བདག་ལ་བརྩེ་བ་ཆེན་པོས་ཉེར་དགོངས་ནས། འགལ་རྐྱེན་བར་ཆད་ཐམས་ཅད་ཞི་བར་དང་། བསམ་དོན་ཡིད་བཞིན་འགྲུབ་པར་མཛད་དུ་གསོལ།</p>
+    <p class="phon">Khyen-tsé nü-den gyal-wa sé-ché nam / Dak-la tsé-wa chen-pö nyer-gong né / Gal-kyen bar-ché tam-ché zhi-war dang / Sam-dön yi-zhin drup-par dzé-du sol</p>
+    <p class="en">O Buddhas and Bodhisattvas, endowed with wisdom, love, and power, look upon me with your vast affection! Pacify all adverse conditions and obstacles, and cause my aspirations to be fulfilled, just as I wish!</p>
+    <p class="zh">具足智悲力諸佛佛子眾，以大慈愛心垂念攝受我。一切逆緣障礙悉平息，所思所願如意祈成就。</p>
+  </article>
+</section>
+
+
+<!-- ============ VIII. INVOKE TARA ============ -->
+<section class="section" id="invoke-tara">
+  <div class="section-header">
+    <div class="section-num">VIII · Section Eight</div>
+    <h2 class="section-title-en">Invocation of Ārya Tārā</h2>
+    <p class="section-title-zh">迎請至尊聖度母</p>
+  </div>
+
+  <article class="verse">
+    <span class="verse-label">Summoning Tārā · 召請度母</span>
+    <p class="tib">རང་གི་སྙིང་ག་ནས་འོད་ཟེར་འཕྲོས་པས་ལྷོ་ཕྱོགས་པོ་ཏ་ལ་ནས་རྗེ་བཙུན་མ་འཕགས་མ་སྒྲོལ་མའི་ལྷ་ཚོགས་འཁོར་དང་བཅས་པ། ཨོཾ་བཛྲ་ས་མཱ་ཛཿ</p>
+    <p class="phon">Rang-gi nying-ga né ö-zer trö-pé lho-chok Po-ta-la né Jé-tsün-ma Pak-ma Dröl-mé lha-tsok khor-dang ché-pa / Oṃ Vajra Samājaḥ</p>
+    <p class="en">From my heart, rays of light stream forth to the southern realm of Potala, invoking the Venerable Noble Tārā, Mother of Liberation, together with her assembly of deities and retinue. <strong>OṂ VAJRA SAMĀJAḤ!</strong></p>
+    <p class="zh">自心間放射光芒，至南方普陀勝境，迎請至尊聖救度母及天眾眷屬。唵 嚩日囉 薩嘛惹 扎！<br><em>結召請手印。</em></p>
+  </article>
+
+  <article class="verse">
+    <span class="verse-label">Born from TĀṂ · 當字所化生</span>
+    <p class="tib">པོ་ཏ་ལ་ཡི་གནས་མཆོག་ནས། །ཏཱཾ་ཡིག་ལྗང་གུ་ལས་འཁྲུངས་ཤིང་། །འོད་དཔག་མེད་པས་དབུ་ལ་བརྒྱན། །དུས་གསུམ་སངས་རྒྱས་ཕྲིན་ལས་མ། །འགྲོ་བའི་དོན་ཕྱིར་གཤེགས་སུ་གསོལ། །</p>
+    <p class="phon">Po-ta-la yi né-chok né / Tā yik jang-gu lé trung shing / Ö-pak-mé-pé u-la gyen / Dü-sum sang-gyé trin-lé ma / Dro-wé dön-chir shek-su sol</p>
+    <p class="en">From Potala, the supreme abode, born from the green syllable TĀṂ, your crown adorned by Amitābha, the Infinite Light — O Activity-Mother of the Buddhas of all three times, for the sake of beings, we beseech you — please come!</p>
+    <p class="zh">殊勝淨境普陀山，綠色「當」(ཏཱཾ) 字所化生，無量光佛為頂嚴，三世諸佛事業母。為利眾生祈降臨！</p>
+  </article>
+
+  <article class="verse">
+    <span class="verse-label">Lotus Throne · 蓮座安坐</span>
+    <p class="tib">ཨོཾ་པདྨ་ཀ་མ་ལཱ་ཡ་སྟཱཾ། ལྷ་དང་ལྷ་མིན་ཅོད་པན་གྱིས། །ཞབས་གཉིས་པདྨོ་ལ་བཏུད་དེ། །ཕོངས་པ་ཀུན་ལས་སྒྲོལ་མཛད་མ། །སྒྲོལ་མ་ཡུམ་ལ་ཕྱག་འཚལ་ལོ།།</p>
+    <p class="phon">O Padma Kamalāya Stā / Lha-dang lha-min chö-pen gyi / Zhap-nyi pe-mo la tü-dé / Pong-pa kün-lé dröl-dzé ma / Dröl-ma yum-la chak-tsal lo</p>
+    <p class="en"><strong>OṂ PADMA KAMALĀYA STĀṂ!</strong> <em>(Please take this lotus seat!)</em> The gods and asuras, with their diadems, bow down to your two lotus feet. O you who liberate from every destitution — to Tārā, the Mother, I prostrate!</p>
+    <p class="zh">唵 貝瑪 卡瑪拉雅 當！<em>（請於蓮座安坐！）</em>天與非天以冠冕，敬伏雙足蓮華前。救度一切貧困者——度母佛母前頂禮！</p>
+  </article>
+</section>
+
+
+<!-- ============ IX. TARA OFFERINGS ============ -->
+<section class="section" id="tara-offerings">
+  <div class="section-header">
+    <div class="section-num">IX · Section Nine</div>
+    <h2 class="section-title-en">Offerings to Ārya Tārā</h2>
+    <p class="section-title-zh">至尊度母供養</p>
+  </div>
+
+  <article class="verse mantra">
+    <span class="verse-label">Eight Offerings to Tārā · 度母八供</span>
+    <p class="tib">ཨོཾ་ཨཱརྱ་ཏཱ་རེ་ས་པ་རི་ཝཱ་ར་ཨརྒྷཾ་པཱུ་ཛ་ཨཱཿ་ཧཱུྃ ... (×8)</p>
+    <p class="en">Oṃ Ārya Tāre Saparivāra Arghaṃ · Pādyaṃ · Puṣpe · Dhūpe · Āloke · Gandhe · Naivedye · Śabda — Pūjā Āḥ Hūṃ</p>
+    <p class="zh">唵 聖度母並眷屬——供養飲水、濯足水、妙花、燒香、明燈、塗香、飲食、天樂！阿 吽！</p>
+  </article>
+
+  <article class="verse mantra">
+    <span class="verse-label">Vajra Dharma Mantra · 金剛法音咒</span>
+    <p class="tib">ཨོཾ་བཛྲ་དྷརྨཱ་ར་ཎི་ཏ ... ཧཱུྃ་ཧཱུྃ་ཧཱུྃ། ཧོཿ ཧོཿ ཧོཿ ཨཱ་ཁཾ་སྭཱ་ཧཱ།</p>
+    <p class="en">OṂ! The sound of the Vajra Dharma — ringing, resounding, reverberating throughout — shakes all the Buddha-fields! HŪṂ HŪṂ HŪṂ! HO HO HO! Ā KHAṂ SVĀHĀ!</p>
+    <p class="zh">唵！金剛法音——鳴、大鳴、遍大鳴——震動一切諸佛剎土！吽吽吽　呵呵呵　阿　康　娑婆訶！</p>
+  </article>
+</section>
+
+
+<!-- ============ X. SECOND MANDALA ============ -->
+<section class="section" id="mandala-2">
+  <div class="section-header">
+    <div class="section-num">X · Section Ten</div>
+    <h2 class="section-title-en">The Second Mandala Offering</h2>
+    <p class="section-title-zh">再供壇城</p>
+  </div>
+
+  <article class="verse">
+    <p class="tib">ས་གཞི་སྤོས་ཆུས་བྱུགས་ཤིང་མེ་ཏོག་བཀྲམ། །རི་རབ་གླིང་བཞི་ཉི་ཟླས་བརྒྱན་པ་འདི། །སངས་རྒྱས་ཞིང་དུ་དམིགས་ཏེ་ཕུལ་བ་ཡིས། །འགྲོ་ཀུན་རྣམ་དག་ཞིང་དུ་སྤྱོད་པར་ཤོག །</p>
+    <p class="phon">Sa-zhi pö-chü juk-shing mé-tok tram / Ri-rab ling-zhi nyi-dé gyen-pa di / Sang-gyé zhing-du mik-té pul-wa yi / Dro-kün nam-dak zhing-du chö-par shok</p>
+    <p class="en">The ground anointed with scented water, strewn with flowers, adorned with Mount Meru, the four continents, sun and moon — envisioning this as a Buddha-realm, I offer it, that all beings may partake of utterly pure lands!</p>
+    <p class="zh">香水塗地妙花敷，須彌四洲日月嚴，觀想佛土而供養，願諸有情享淨剎。</p>
+  </article>
+</section>
+
+
+<!-- ============ THE 21 PRAISES — Opening ============ -->
+<section class="section" id="praises">
+  <div class="section-header">
+    <div class="section-num">The Heart of the Practice</div>
+    <h2 class="section-title-en">The Twenty-One Praises to Noble Tārā</h2>
+    <p class="section-title-zh">聖度母二十一禮讚</p>
+    <p class="section-title-tib">ཕྱག་འཚལ་ཉི་ཤུ་རྩ་གཅིག་བསྟོད་པ།</p>
+  </div>
+
+  <article class="verse mantra">
+    <span class="verse-label">Opening Salutation · 啟讚</span>
+    <p class="tib">ཨོཾ་རྗེ་བཙུན་མ་འཕགས་མ་སྒྲོལ་མ་ལ་ཕྱག་འཚལ་ལོ།།</p>
+    <p class="phon">OM Je-tsün-ma Pak-ma Dröl-ma-la chak-tshal-lo</p>
+    <p class="en"><strong>OM! Homage to the Noble Lady, the Reverend Tārā!</strong></p>
+    <p class="zh">唵！至尊聖救度母前　敬禮！</p>
+  </article>
+
+  <div class="double-line"></div>
+</section>
+
+<!-- ===== Praise 1 ===== -->
+<section class="section" id="praise-1">
+  <div class="praise-medal"><span class="roman">I</span> The Swift Heroine · རབ་ཏུ་དཔའ་བའི་སྒྲོལ་མ · 速勇母</div>
+  <article class="verse">
+    <p class="tib">ཕྱག་འཚལ་སྒྲོལ་མ་མྱུར་མ་དཔའ་མོ། །སྤྱན་ནི་སྐད་གཅིག་གློག་དང་འདྲ་མ། །འཇིག་རྟེན་གསུམ་མགོན་ཆུ་སྐྱེས་ཞལ་གྱི། །གེ་སར་བྱེ་བ་ལས་ནི་བྱུང་མ།།</p>
+    <p class="phon">Chak-tshal Dröl-ma nyur-ma pa-mo / Chen-ni ke-chik lok-dang dra-ma / Jik-ten sum-gön chu-kye zhal-gyi / Ke-sar che-wa le-ni jung-ma</p>
+    <p class="en">Homage to Tārā, the swift heroine, whose eyes flash forth like bolts of lightning — born from the blossoming pistil of the lotus face of the Lord of the Three Worlds.</p>
+    <p class="zh">敬禮度母速勇母，雙目剎那如電閃，三界怙主蓮華面，花蕊開敷化現前。</p>
+  </article>
+</section>
+
+<!-- ===== Praise 2 ===== -->
+<section class="section" id="praise-2">
+  <div class="praise-medal"><span class="roman">II</span> The Autumn Moon · དཀར་མོ་ཟླ་མདངས་སྒྲོལ་མ · 秋月母</div>
+  <article class="verse">
+    <p class="tib">ཕྱག་འཚལ་སྟོན་ཀའི་ཟླ་བ་ཀུན་ཏུ། །གང་བ་བརྒྱ་ནི་བརྩེགས་པའི་ཞལ་མ། །སྐར་མ་སྟོང་ཕྲག་ཚོགས་པ་རྣམས་ཀྱིས། །རབ་ཏུ་ཕྱེ་བའི་འོད་རབ་འབར་མ།།</p>
+    <p class="phon">Chak-tshal tön-ke da-wa kün-tu / Kang-wa gya-ni tsek-pe zhal-ma / Kar-ma tong-trak tsok-pa nam-kyi / Rap-tu che-we ö-rap bar-ma</p>
+    <p class="en">Homage to her whose face shines with a hundred full autumn moons gathered together, blazing with the resplendent radiance of a thousand assembled starry clusters.</p>
+    <p class="zh">敬禮面如秋百月，盈滿堆積集其顏，千萬星宿齊聚耀，光華燦爛極熾燃。</p>
+  </article>
+</section>
+
+<!-- ===== Praise 3 ===== -->
+<section class="section" id="praise-3">
+  <div class="praise-medal"><span class="roman">III</span> The Golden Blue Lotus · གསེར་མདོག་ཅན་གྱི་སྒྲོལ་མ · 紫金蓮母</div>
+  <article class="verse">
+    <p class="tib">ཕྱག་འཚལ་སེར་སྔོ་ཆུ་ནས་སྐྱེས་ཀྱི། །པདྨས་ཕྱག་ནི་རྣམ་པར་བརྒྱན་མ། །སྦྱིན་པ་བརྩོན་འགྲུས་དཀའ་ཐུབ་ཞི་བ། །བཟོད་པ་བསམ་གཏན་སྤྱོད་ཡུལ་ཉིད་མ།།</p>
+    <p class="phon">Chak-tshal ser-ngo chu-ne kye-kyi / Pe-me chak-ni nam-par gyen-ma / Jin-pa tsön-drü ka-tup zhi-wa / Zö-pa sam-ten chö-yül nyi-ma</p>
+    <p class="en">Homage to her whose hand is adorned with a water-born lotus of blue and gold — whose domain is generosity, diligence, austerity, calm, patience, and meditative concentration.</p>
+    <p class="zh">敬禮紫金水生蓮，莊嚴飾手殊妙母，布施精進苦行靜，安忍禪定行境母。</p>
+  </article>
+</section>
+
+<!-- ===== Praise 4 ===== -->
+<section class="section" id="praise-4">
+  <div class="praise-medal"><span class="roman">IV</span> The Victorious Ushnisha · གཙུག་ཏོར་རྣམ་རྒྱལ་སྒྲོལ་མ · 頂髻母</div>
+  <article class="verse">
+    <p class="tib">ཕྱག་འཚལ་དེ་བཞིན་གཤེགས་པའི་གཙུག་ཏོར། །མཐའ་ཡས་རྣམ་པར་རྒྱལ་བར་སྤྱོད་མ།། མ་ལུས་ཕ་རོལ་ཕྱིན་པ་ཐོབ་པའི། །རྒྱལ་བའི་སྲས་ཀྱིས་ཤིན་ཏུ་བསྟེན་མ།།</p>
+    <p class="phon">Chak-tshal de-zhin-shek-pe tsuk-tor / Tha-ye nam-par gyal-war chö-ma / Ma-lü pha-röl chin-pa top-pe / Gyal-we se-kyi shin-tu ten-ma</p>
+    <p class="en">Homage to her, the ushnisha of the Tathāgatas, who abides in infinite triumph, deeply revered by the children of the Jinas, who have attained every perfection without exception.</p>
+    <p class="zh">敬禮如來頂髻母，無量尊勝恆行母，無餘波羅蜜滿得，諸佛子眾極依崇。</p>
+  </article>
+</section>
+
+<!-- ===== Praise 5 ===== -->
+<section class="section" id="praise-5">
+  <div class="praise-medal"><span class="roman">V</span> TUTTĀRE & HŪṂ · ཧཱུཾ་སྒྲ་སྒྲོག་པའི་སྒྲོལ་མ · 充遍母</div>
+  <article class="verse">
+    <p class="tib">ཕྱག་འཚལ་ཏུཏྟཱ་ར་ཧཱུྃ་ཡི་གེ །འདོད་དང་ཕྱོགས་དང་ནམ་མཁའ་གང་མ། །འཇིག་རྟེན་བདུན་པོ་ཞབས་ཀྱིས་མནན་ཏེ། །ལུས་པ་མེད་པར་འགུགས་པར་ནུས་མ།།</p>
+    <p class="phon">Chak-tshal TUTTARA HUNG yi-ge / Dö-dang chok-dang nam-kha gang-ma / Jik-ten dün-po zhap-kyi nen-te / Lü-pa me-par guk-par nü-ma</p>
+    <p class="en">Homage to her who fills desire, directions, and space with the syllables TUTTĀRE and HŪṂ, who tramples the seven worlds beneath her feet and has the power to summon all without remainder.</p>
+    <p class="zh">敬禮都答惹吽字，充遍欲方及虛空，雙足踐踏七世間，無餘一切悉勾召。</p>
+  </article>
+</section>
+
+<!-- ===== Praise 6 ===== -->
+<section class="section" id="praise-6">
+  <div class="praise-medal"><span class="roman">VI</span> Worshipped by the Gods · འཇིག་རྟེན་གསུམ་རྒྱལ་སྒྲོལ་མ · 天供母</div>
+  <article class="verse">
+    <p class="tib">ཕྱག་འཚལ་བརྒྱ་བྱིན་མེ་ལྷ་ཚངས་པ། །རླུང་ལྷ་སྣ་ཚོགས་དབང་ཕྱུག་མཆོད་མ། །འབྱུང་པོ་རོ་ལངས་དྲི་ཟ་རྣམས་དང། །གནོད་སྦྱིན་ཚོགས་ཀྱིས་མདུན་ནས་བསྟོད་མ།།</p>
+    <p class="phon">Chak-tshal gya-jin me-lha tsang-pa / Lung-lha na-tsok wang-chuk chö-ma / Jung-po ro-lang dri-za nam-dang / Nö-jin tsok-kyi dün-ne tö-ma</p>
+    <p class="en">Homage to her who is worshipped by Indra, Agni, Brahmā, the Maruts, and Vishveshvara, and praised in her presence by hosts of Bhūtas, vetālas, gandharvas, and yakshas.</p>
+    <p class="zh">敬禮帝釋火天母，梵天風神自在供，部多起屍乾闥婆，藥叉諸眾咸讚頌。</p>
+  </article>
+</section>
+
+<!-- ===== Praise 7 ===== -->
+<section class="section" id="praise-7">
+  <div class="praise-medal"><span class="roman">VII</span> The Destroyer of Magic · རྒོལ་བ་འཇོམས་པའི་སྒྲོལ་མ · 破幻母</div>
+  <article class="verse">
+    <p class="tib">ཕྱག་འཚལ་ཏྲད་ཅེས་བྱ་དང་ཕཊ་ཀྱིས། །ཕ་རོལ་འཕྲུལ་འཁོར་རབ་ཏུ་འཇོམས་མ། །གཡས་བསྐུམ་གཡོན་བརྐྱང་ཞབས་ཀྱིས་མནན་ཏེ། །མེ་འབར་འཁྲུག་པ་ཤིན་ཏུ་འབར་མ།།</p>
+    <p class="phon">Chak-tshal TRAT-che ja-dang PHAT-kyi / Pha-röl trül-khor rap-tu jom-ma / Ye-kum yön-kyang zhap-kyi nen-te / Me-bar truk-pa shin-tu bar-ma</p>
+    <p class="en">Homage to her who utterly destroys others' magic devices with TRAT and PHAṬ, trampling with right foot drawn in and left extended, blazing fiercely amid swirling flames.</p>
+    <p class="zh">敬禮怛惹及呸字，摧毀他方諸幻輪，右屈左伸足踐踏，烈焰騰旋極熾然。</p>
+  </article>
+</section>
+
+<!-- ===== Praise 8 ===== -->
+<section class="section" id="praise-8">
+  <div class="praise-medal"><span class="roman">VIII</span> The Conqueror of Māras · དབང་མཆོག་སྟེར་བའི་སྒྲོལ་མ · 伏魔母</div>
+  <article class="verse">
+    <p class="tib">ཕྱག་འཚལ་ཏུ་རེ་འཇིགས་པ་ཆེན་མོ། །བདུད་ཀྱི་དཔའ་བོ་རྣམ་པར་འཇོམས་མ། །ཆུ་སྐྱེས་ཞལ་ནི་ཁྲོ་གཉེར་ལྡན་མཛད། །དགྲ་བོ་ཐམས་ཅད་མ་ལུས་གསོད་མ།།</p>
+    <p class="phon">Chak-tshal TURE jik-pa chen-mo / Dü-kyi pa-wo nam-par jom-ma / Chu-kye zhal-ni tro-nyer den-dze / Dra-wo tam-che ma-lü sö-ma</p>
+    <p class="en">Homage to TURE, the greatly fearsome one, who annihilates the champions of Māra — with lotus face and furrowed brow, she slays every last foe without exception.</p>
+    <p class="zh">敬禮都瑞大怖畏，摧伏魔軍諸勇將，蓮華面具顰眉相，無餘怨敵悉殄滅。</p>
+  </article>
+</section>
+
+<!-- ===== Praise 9 ===== -->
+<section class="section" id="praise-9">
+  <div class="praise-medal"><span class="roman">IX</span> The Three Jewels Mudrā · འཕགས་མ་མཆོག་སྩོལ་སྒྲོལ་མ · 三寶印母</div>
+  <article class="verse">
+    <p class="tib">ཕྱག་འཚལ་དཀོན་མཆོག་གསུམ་མཚོན་ཕྱག་རྒྱའི། །སོར་མོས་ཐུགས་ཀར་རྣམ་པར་བརྒྱན་མ། །མ་ལུས་ཕྱོགས་ཀྱི་འཁོར་ལོས་བརྒྱན་པའི། །རང་གི་འོད་ཀྱི་ཚོགས་རྣམས་འཁྲུག་མ།།</p>
+    <p class="phon">Chak-tshal kön-chok sum-tsön chak-gye / Sor-mö tuk-kar nam-par gyen-ma / Ma-lü chok-kyi khor-lö gyen-pe / Rang-gi ö-kyi tsok-nam truk-ma</p>
+    <p class="en">Homage to her whose heart is adorned by her fingers forming the mudrā symbolizing the Three Jewels, whose own light-rays, swirling in every direction, are adorned with the wheels of all the quarters.</p>
+    <p class="zh">敬禮三寶標印母，手指當胸莊嚴飾，遍佈十方輪莊嚴，自光聚集熾旋轉。</p>
+  </article>
+</section>
+
+<!-- ===== Praise 10 ===== -->
+<section class="section" id="praise-10">
+  <div class="praise-medal"><span class="roman">X</span> The Radiant Diadem · མྱ་ངན་སེལ་བའི་སྒྲོལ་མ · 歡喜母</div>
+  <article class="verse">
+    <p class="tib">ཕྱག་འཚལ་རབ་ཏུ་དགའ་བ་བརྗིད་པའི། །དབུ་རྒྱན་འོད་ཀྱི་ཕྲེང་བ་སྤེལ་མ། །བཞད་པ་རབ་བཞད་ཏུཏྟཱ་ར་ཡིས། །བདུད་དང་འཇིག་རྟེན་དབང་དུ་མཛད་མ།།</p>
+    <p class="phon">Chak-tshal rap-tu ga-wa ji-pe / Ü-gyen ö-kyi treng-wa pel-ma / Zhe-pa rap-zhe TUTTARA-yi / Dü-dang jik-ten wang-du dze-ma</p>
+    <p class="en">Homage to her, resplendent with exuberant joy, whose diadem spreads a garland of light, who with peals of laughter — TUTTĀRE — brings Māra and the world under her command.</p>
+    <p class="zh">敬禮威德極歡喜，頂冠散射光明鬘，發出大笑都答惹，調伏群魔與世間。</p>
+  </article>
+</section>
+
+<!-- ===== Praise 11 ===== -->
+<section class="section" id="praise-11">
+  <div class="praise-medal"><span class="roman">XI</span> The Summoner of Protectors · ཕོངས་པ་སེལ་བའི་སྒྲོལ་མ · 勾召母</div>
+  <article class="verse">
+    <p class="tib">ཕྱག་འཚལ་ས་གཞི་སྐྱོང་བའི་ཚོགས་རྣམས། །ཐམས་ཅད་འགུགས་པར་ནུས་པ་ཉིད་མ། །ཁྲོ་གཉེར་གཡོ་བའི་ཡི་གེ་ཧཱུྃ་གིས། །ཕོངས་པ་ཐམས་ཅད་རྣམ་པར་སྒྲོལ་མ།།</p>
+    <p class="phon">Chak-tshal sa-zhi kyong-we tsok-nam / Tam-che guk-par nü-pa nyi-ma / Tro-nyer yo-we yi-ge HUNG-gi / Pong-pa tam-che nam-par dröl-ma</p>
+    <p class="en">Homage to her who has the power to summon all the hosts of earth-protectors, whose shaking, frowning syllable HŪṂ liberates from every destitution.</p>
+    <p class="zh">敬禮能召地神母，悉能勾攝守地眾，顰眉震動吽字力，一切貧苦悉解脫。</p>
+  </article>
+</section>
+
+<!-- ===== Praise 12 ===== -->
+<section class="section" id="praise-12">
+  <div class="praise-medal"><span class="roman">XII</span> The Crescent Moon · བཀྲ་ཤིས་སྦྱིན་པའི་སྒྲོལ་མ · 月冠母</div>
+  <article class="verse">
+    <p class="tib">ཕྱག་འཚལ་ཟླ་བའི་དུམ་བུས་དབུ་བརྒྱན། །བརྒྱན་པ་ཐམས་ཅད་ཤིན་ཏུ་འབར་མ། །རལ་པའི་ཁྲོད་ནས་འོད་དཔག་མེད་ལས། །རྟག་པར་ཤིན་ཏུ་འོད་ནི་མཛད་མ།།</p>
+    <p class="phon">Chak-tshal da-we dum-bü ü-gyen / Gyen-pa tam-che shin-tu bar-ma / Ral-pe trö-ne ö-pak-me-le / Tak-par shin-tu ö-ni dze-ma</p>
+    <p class="en">Homage to her whose diadem is a crescent moon, all of whose ornaments blaze brilliantly, from whose piled hair Amitābha forever radiates great streams of light.</p>
+    <p class="zh">敬禮頂冠月片飾，莊嚴具等極燦然，髻髮叢中彌陀佛，恆常流射大光明。</p>
+  </article>
+</section>
+
+<!-- ===== Praise 13 ===== -->
+<section class="section" id="praise-13">
+  <div class="praise-medal"><span class="roman">XIII</span> The Fire of the Final Aeon · ཡོངས་སུ་སྨིན་མཛད་སྒྲོལ་མ · 劫火母</div>
+  <article class="verse">
+    <p class="tib">ཕྱག་འཚལ་བསྐལ་པ་ཐ་མའི་མེ་ལྟར། །འབར་བའི་ཕྲེང་བའི་དབུས་ན་གནས་མ། །གཡས་བརྐྱངས་གཡོན་བསྐུམས་ཀུན་ནས་བསྐོར་དགའི། །དགྲ་ཡི་དཔུང་ནི་རྣམ་པར་འཇོམས་མ།།</p>
+    <p class="phon">Chak-tshal kal-pa tha-me me-tar / Bar-we treng-we ü-na ne-ma / Ye-kyang yön-kum kün-ne kor-ge / Dra-yi pung-ni nam-par jom-ma</p>
+    <p class="en">Homage to her who dwells at the centre of a garland blazing like the fire at the end of an aeon, in the joy of the royal posture — right extended, left drawn in — utterly vanquishing the enemy host.</p>
+    <p class="zh">敬禮安住末劫火，熾盛光鬘中央母，右伸左屈歡喜旋，悉能摧滅怨敵軍。</p>
+  </article>
+</section>
+
+<!-- ===== Praise 14 ===== -->
+<section class="section" id="praise-14">
+  <div class="praise-medal"><span class="roman">XIV</span> The Pounder of the Earth · ཁྲོ་གཉེར་གཡོ་བའི་སྒྲོལ་མ · 震地母</div>
+  <article class="verse">
+    <p class="tib">ཕྱག་འཚལ་ས་གཞིའི་ངོས་ལ་ཕྱག་གི །མཐིལ་གྱིས་བསྣུན་ཅིང་ཞབས་ཀྱིས་བརྡུང་མ། །ཁྲོ་གཉེར་ཅན་མཛད་ཡི་གེ་ཧཱུྃ་གིས། །རིམ་པ་བདུན་པོ་རྣམས་ནི་འགེམས་མ།།</p>
+    <p class="phon">Chak-tshal sa-zhi ngö-la chak-gi / Til-gyi nün-ching zhap-kyi dung-ma / Tro-nyer chen-dze yi-ge HUNG-gi / Rim-pa dün-po nam-ni gem-ma</p>
+    <p class="en">Homage to her who strikes the face of the earth with the palm of her hand and pounds it with her feet, who, with furrowed brow and the syllable HŪṂ, shatters the seven underworlds.</p>
+    <p class="zh">敬禮手掌壓地母，雙足踏蹬擊地面，顰眉忿怒吽字力，七層地下悉崩裂。</p>
+  </article>
+</section>
+
+<!-- ===== Praise 15 ===== -->
+<section class="section" id="praise-15">
+  <div class="praise-medal"><span class="roman">XV</span> The Peaceful Nirvāṇa · ཞི་བ་ཆེན་པོའི་སྒྲོལ་མ · 寂靜母</div>
+  <article class="verse">
+    <p class="tib">ཕྱག་འཚལ་བདེ་མ་དགེ་མ་ཞི་མ། །མྱ་ངན་འདས་ཞི་སྤྱོད་ཡུལ་ཉིད་མ། །སྭཱ་ཧཱ་ཨོཾ་དང་ཡང་དག་ལྡན་མས། །སྡིག་པ་ཆེན་པོ་འཇོམས་པ་ཉིད་མ།།</p>
+    <p class="phon">Chak-tshal de-ma ge-ma zhi-ma / Nya-ngen de-zhi chö-yül nyi-ma / SOHA OM-dang yang-dak den-me / Dik-pa chen-po jom-pa nyi-ma</p>
+    <p class="en">Homage to her, the blissful, the virtuous, the serene, whose domain is the peace of nirvāṇa — perfectly endowed with SVĀHĀ and OṂ, she destroys every great evil.</p>
+    <p class="zh">敬禮安樂善靜母，涅槃寂靜行境母，具足唵與莎哈力，摧滅一切大罪障。</p>
+  </article>
+</section>
+
+<!-- ===== Praise 16 ===== -->
+<section class="section" id="praise-16">
+  <div class="praise-medal"><span class="roman">XVI</span> The Liberator from HŪṂ · ཆགས་པ་འཇོམས་པའི་སྒྲོལ་མ · 明咒母</div>
+  <article class="verse">
+    <p class="tib">ཕྱག་འཚལ་ཀུན་ནས་བསྐོར་རབ་དགའ་བའི། །དགྲ་ཡི་ལུས་ནི་རབ་ཏུ་འགེམས་མ། །ཡི་གེ་བཅུ་པའི་ངག་ནི་བཀོད་པའི། །རིག་པ་ཧཱུྃ་ལས་སྒྲོལ་མ་ཉིད་མ།།</p>
+    <p class="phon">Chak-tshal kün-ne kor-rap ga-we / Dra-yi lü-ni rap-tu gem-ma / Yi-ge chu-pe ngak-ni kö-pe / Rik-pa HUNG-le Dröl-ma nyi-ma</p>
+    <p class="en">Homage to her who, in the joy of whirling, crushes the bodies of foes — the Liberator sprung from HŪṂ, in the vidyā that arrays the ten syllables.</p>
+    <p class="zh">敬禮歡喜旋繞母，悉能碎裂怨敵身，十字真言嚴法界，吽字明咒度母身。</p>
+  </article>
+</section>
+
+<!-- ===== Praise 17 ===== -->
+<section class="section" id="praise-17">
+  <div class="praise-medal"><span class="roman">XVII</span> The Shaker of the Three Realms · བདེ་བ་སྒྲུབ་པའི་སྒྲོལ་མ · 震動母</div>
+  <article class="verse">
+    <p class="tib">ཕྱག་འཚལ་ཏུ་རེ་ཞབས་ནི་བརྡབས་པས། །ཧཱུྃ་གི་རྣམ་པའི་ས་བོན་ཉིད་མ། །རི་རབ་མནྡ་ར་དང་འབིགས་བྱེད། །འཇིག་རྟེན་གསུམ་རྣམས་གཡོ་བ་ཉིད་མ།།</p>
+    <p class="phon">Chak-tshal TURE zhap-ni dap-pe / HUNG-gi nam-pe sa-bön nyi-ma / Ri-rap Man-da-ra-dang bik-je / Jik-ten sum-nam yo-wa nyi-ma</p>
+    <p class="en">Homage to her who stamps her feet with TURE, whose seed syllable has the form of HŪṂ, who shakes Mount Meru, Mandara, and Vindhya together with all the three worlds.</p>
+    <p class="zh">敬禮都瑞足踏母，種子吽字相所現，須彌曼陀頻都山，三界一切悉震動。</p>
+  </article>
+</section>
+
+<!-- ===== Praise 18 ===== -->
+<section class="section" id="praise-18">
+  <div class="praise-medal"><span class="roman">XVIII</span> The Dispeller of Poison · རྣམ་པར་རྒྱལ་བའི་སྒྲོལ་མ · 除毒母</div>
+  <article class="verse">
+    <p class="tib">ཕྱག་འཚལ་ལྷ་ཡི་མཚོ་ཡི་རྣམ་པའི། །རི་དྭགས་རྟགས་ཅན་ཕྱག་ན་བསྣམས་མ། །ཏཱ་ར་གཉིས་བརྗོད་ཕཊ་ཀྱི་ཡི་གེས། །དུག་རྣམས་མ་ལུས་པར་ནི་སེལ་མ།།</p>
+    <p class="phon">Chak-tshal lha-yi tsho-yi nam-pe / Ri-dak tak-chen cha-na nam-ma / TARA nyi-jö PHAT-kyi yi-ge / Tuk-nam ma-lü par-ni sel-ma</p>
+    <p class="en">Homage to her who holds in her hand the deer-marked moon in the form of the divine lake, utterly dispelling all poisons with TĀRA spoken twice and the syllable PHAṬ.</p>
+    <p class="zh">敬禮手持天海相，鹿誌月輪執手中，二誦答惹及呸字，無餘毒害悉消除。</p>
+  </article>
+</section>
+
+<!-- ===== Praise 19 ===== -->
+<section class="section" id="praise-19">
+  <div class="praise-medal"><span class="roman">XIX</span> The Dispeller of Strife · སྡུག་བསྔལ་བསྲེག་པའི་སྒྲོལ་མ · 除諍母</div>
+  <article class="verse">
+    <p class="tib">ཕྱག་འཚལ་ལྷ་ཡི་ཚོགས་རྣམས་རྒྱལ་པོ། །ལྷ་དང་མི་འམ་ཅི་ཡིས་བསྟེན་མ། །ཀུན་ནས་གོ་ཆ་དགའ་བའི་བརྗིད་ཀྱིས། །རྩོད་དང་རྨི་ལམ་ངན་པ་སེལ་མ།།</p>
+    <p class="phon">Chak-tshal lha-yi tsok-nam gyal-po / Lha-dang mi-am chi-yi ten-ma / Kün-ne go-cha ga-we ji-kyi / Tsö-dang mi-lam ngen-pa sel-ma</p>
+    <p class="en">Homage to her whom the king of the hosts of gods, the gods themselves, and the kinnaras all honour, whose joyous armour blazing in full splendour dispels all strife and evil dreams.</p>
+    <p class="zh">敬禮天眾王所奉，天及緊那羅依止，披掛歡喜鎧甲威，爭鬥惡夢悉消除。</p>
+  </article>
+</section>
+
+<!-- ===== Praise 20 ===== -->
+<section class="section" id="praise-20">
+  <div class="praise-medal"><span class="roman">XX</span> The Dispeller of Fevers · དངོས་གྲུབ་འབྱུང་བའི་སྒྲོལ་མ · 除疫母</div>
+  <article class="verse">
+    <p class="tib">ཕྱག་འཚལ་ཉི་མ་ཟླ་བ་རྒྱས་པའི། །སྤྱན་གཉིས་པོ་ལ་འོད་རབ་གསལ་མ། །ཧ་ར་གཉིས་བརྗོད་ཏུཏྟཱ་ར་ཡིས། །ཤིན་ཏུ་དྲག་པོའི་རིམས་ནད་སེལ་མ།།</p>
+    <p class="phon">Chak-tshal nyi-ma da-wa gye-pe / Jen-nyi po-la ö-rap sal-ma / HARA nyi-jö TUTTARA-yi / Shin-tu drak-pö rim-ne sel-ma</p>
+    <p class="en">Homage to her whose two eyes shine with the radiance of the sun and the full moon, who dispels the most virulent fevers with HARA spoken twice and TUTTĀRE.</p>
+    <p class="zh">敬禮日月廣大母，雙目閃耀極明光，二誦哈惹都答惹，善除猛烈諸瘟疫。</p>
+  </article>
+</section>
+
+<!-- ===== Praise 21 ===== -->
+<section class="section" id="praise-21">
+  <div class="praise-medal"><span class="roman">XXI</span> The Destroyer of Evil Spirits · ཡོངས་རྫོགས་བྱེད་པའི་སྒྲོལ་མ · 至勝母</div>
+  <article class="verse">
+    <p class="tib">ཕྱག་འཚལ་དེ་ཉིད་གསུམ་རྣམས་བཀོད་པས། །ཞི་བའི་མཐུ་དང་ཡང་དག་ལྡན་མ། །གདོན་དང་རོ་ལངས་གནོད་སྦྱིན་ཚོགས་རྣམས། །འཇོམས་པ་ཏུ་རེ་རབ་མཆོག་ཉིད་མ།།</p>
+    <p class="phon">Chak-tshal de-nyi sum-nam kö-pe / Zhi-we tu-dang yang-dak den-ma / Dön-dang ro-lang nö-jin tsok-nam / Jom-pa TURE rap-chok nyi-ma</p>
+    <p class="en">Homage to her who, through the array of the three realities, is perfectly endowed with the power of serenity, who destroys the hosts of evil spirits, vetālas, and yakshas — TURE, the supremely excellent!</p>
+    <p class="zh">敬禮安置三諦母，具足清淨寂滅力，摧滅邪魔起屍眾，都瑞至極勝妙母。</p>
+  </article>
+
+  <article class="verse">
+    <span class="verse-label">Closing of the Praises · 結讚</span>
+    <p class="tib">རྩ་བའི་སྔགས་ཀྱི་བསྟོད་པ་འདི་དང། །ཕྱག་འཚལ་བ་ནི་ཉི་ཤུ་རྩ་གཅིག །</p>
+    <p class="phon">Tsa-we ngak-kyi tö-pa di-dang / Chak-tshal wa-ni nyi-shu tsa-chik</p>
+    <p class="en">This is the praise with the root mantra and the twenty-one verses of homage.</p>
+    <p class="zh">此乃根本咒讚誦，二十一禮敬讚頌。</p>
+  </article>
+</section>
+
+
+<!-- ============ XI. SEVEN-LIMB ============ -->
+<section class="section" id="sevenlimb">
+  <div class="section-header">
+    <div class="section-num">XI · Section Eleven</div>
+    <h2 class="section-title-en">The Seven-Limb Prayer</h2>
+    <p class="section-title-zh">七支供養</p>
+    <p class="section-title-tib">ཡན་ལག་བདུན་པ།</p>
+  </div>
+
+  <article class="verse">
+    <p class="tib">ཕྱག་འཚལ་བ་དང་མཆོད་ཅིང་བཤགས་པ་དང་། །རྗེས་སུ་ཡི་རང་བསྐུལ་ཞིང་གསོལ་བ་ཡི། །དགེ་བ་ཅུང་ཟད་བདག་གིས་ཅི་བསགས་པ། །ཐམས་ཅད་བདག་གིས་བྱང་ཆུབ་ཕྱིར་བསྔོའོ། །</p>
+    <p class="phon">Chak-tsal-wa dang chö-ching shak-pa dang / Jé-su yi-rang kül-zhing sol-wa yi / Gé-wa chung-zé dak-gi chi-sak pa / Tam-ché dak-gi jang-chup chir ngo-o</p>
+    <p class="en">Through prostrating, offering, and confessing, through rejoicing, entreating, and requesting — whatever small virtue I may have gathered, all of it I dedicate toward Enlightenment.</p>
+    <p class="zh">頂禮供養及懺悔，隨喜勸請與祈願，凡我所積微少善，悉皆迴向大菩提。</p>
+  </article>
+</section>
+
+
+<!-- ============ XII. ROOT MANTRA ============ -->
+<section class="section" id="mantra">
+  <div class="section-header">
+    <div class="section-num">XII · Section Twelve</div>
+    <h2 class="section-title-en">The Root Mantra</h2>
+    <p class="section-title-zh">根本心咒</p>
+    <p class="section-title-tib">རྩ་སྔགས།</p>
+  </div>
+
+  <article class="verse mantra">
+    <span class="verse-label">Recite as many as possible · 隨力念誦</span>
+    <p class="tib">ཨོཾ་ཏཱ་རེ་ཏུཏྟཱ་རེ་ཏུ་རེ་སྭཱ་ཧཱ།</p>
+    <p class="en"><strong>OṂ TĀRE TUTTĀRE TURE SVĀHĀ</strong></p>
+    <p class="zh">唵 達列 都答列 都列 娑婆訶</p>
+    <p class="note">Recite 21 times, then "Tāre" 100 times · 念誦二十一遍，再誦「達列」一百遍</p>
+  </article>
+</section>
+
+
+<!-- ============ XIII. ASPIRATIONS ============ -->
+<section class="section" id="aspirations">
+  <div class="section-header">
+    <div class="section-num">XIII · Section Thirteen</div>
+    <h2 class="section-title-en">Aspirations</h2>
+    <p class="section-title-zh">發願文</p>
+  </div>
+
+  <article class="verse">
+    <span class="verse-label">To the Lady of Compassion · 大悲尊</span>
+    <p class="tib">རྗེ་བཙུན་བཅོམ་ལྡན་འདས་མ་ཐུགས་རྗེ་ཅན། །བདག་དང་མཐའ་ཡས་སེམས་ཅན་ཐམས་ཅད་ཀྱི། །སྒྲིབ་གཉིས་བྱང་ཞིང་ཚོགས་གཉིས་མྱུར་རྫོགས་ནས། །རྫོགས་པའི་སངས་རྒྱས་ཐོབ་པར་མཛད་དུ་གསོལ། །</p>
+    <p class="phon">Jé-tsün chom-den dé-ma tuk-jé chen / Dak-dang ta-yé sem-chen tam-ché kyi / Drip-nyi jang-zhing tsok-nyi nyur-dzok né / Dzok-pé sang-gyé top-par dzé-du sol</p>
+    <p class="en">O Venerable Bhagavatī, Lady of Compassion! For myself and all sentient beings beyond measure — purify the twofold obscurations, swiftly perfect the twofold accumulations, and grant that we attain complete and perfect Buddhahood!</p>
+    <p class="zh">至尊薄伽梵母大悲者！我與無邊一切有情眾，二障清淨二資速圓滿，祈令證得圓滿正等覺。</p>
+  </article>
+
+  <article class="verse">
+    <span class="verse-label">Removal of Obstacles · 遣除障礙</span>
+    <p class="tib">དེ་མ་ཐོབ་ཀྱི་ཚེ་རབས་ཀུན་ཏུ་ཡང་། །ལྷ་དང་མི་ཡི་བདེ་བ་མཆོག་ཐོབ་ནས། །ཐམས་ཅད་མཁྱེན་པ་བསྒྲུབ་པར་བྱེད་པ་ལ། །བར་ཆོད་གདོན་བགེགས་རིམས་དང་ནད་ལ་སོགས། དུས་མིན་འཆི་བར་གྱུར་པ་སྣ་ཚོགས་དང་། །རྨི་ལམ་ངན་དང་མཚན་མ་ངན་པ་དང་། །འཇིགས་པ་བརྒྱད་སོགས་ཉེ་བར་འཚེ་བ་རྣམས། །མྱུར་དུ་ཞི་ཞིང་མེད་པར་མཛད་དུ་གསོལ། །</p>
+    <p class="en">Until that state is won, throughout all our lives, may we obtain the supreme happiness of gods and humans. In our endeavour to accomplish omniscience, may all obstacles — demonic harm, obstructing spirits, epidemics, illness, and the rest — the varied causes of untimely death, evil dreams and ill omens, the eight great fears, and all manner of affliction — swiftly pacify and utterly annihilate them, we pray!</p>
+    <p class="zh">未證彼果一切生世中，願得人天殊勝大安樂。於修遍知正法之道上，障礙魔障瘟疫病苦等——種種非時死因緣，惡夢惡兆不祥相，八大怖畏諸侵害，速令平息悉消滅！</p>
+  </article>
+
+  <article class="verse">
+    <span class="verse-label">Flourishing of Virtue · 善德增盛</span>
+    <p class="tib">འཇིག་རྟེན་འཇིག་རྟེན་ལས་ནི་འདས་པ་ཡི། །བཀྲ་ཤིས་བདེ་ལེགས་ཕུན་སུམ་ཚོགས་པ་རྣམས། །འཕེལ་ཞིང་རྒྱས་པས་དོན་རྣམས་མ་ལུས་པ། །འབད་མེད་ལྷུན་གྱིས་གྲུབ་པར་མཛད་དུ་གསོལ། །</p>
+    <p class="en">May worldly and transcendent auspiciousness, well-being, and perfect abundance increase and flourish, and may every aim without exception be spontaneously accomplished without effort!</p>
+    <p class="zh">世間出世間一切，吉祥安樂圓滿聚，增盛廣大一切義，無勤任運願成就！</p>
+  </article>
+
+  <article class="verse">
+    <span class="verse-label">The Waxing Moon · 上弦月增</span>
+    <p class="tib">སྒྲུབ་ལ་བརྩོན་ཞིང་དམ་ཆོས་འཕེལ་བ་དང་། །རྟག་ཏུ་ཁྱོད་གྲུབ་ཞལ་མཆོག་མཐོང་བ་དང་། །སྟོང་ཉིད་དོན་རྟོགས་བྱང་སེམས་རིན་པོ་ཆེ། །ཡར་ངོའི་ཟླ་ལྟར་འཕེལ་ཞིང་རྒྱས་པར་མཛོད། །</p>
+    <p class="en">May we be diligent in practice, may the sacred Dharma spread, and may we always behold your supreme countenance! May the realization of emptiness and the precious bodhicitta increase and expand like the waxing moon!</p>
+    <p class="zh">精進修持聖法增，恆時得瞻勝尊顏。空性實義與寶菩提心，猶如上弦明月漸增盛！</p>
+  </article>
+
+  <article class="verse">
+    <span class="verse-label">Birth in the Pure Land · 淨土往生</span>
+    <p class="tib">རྒྱལ་བའི་དཀྱིལ་འཁོར་བཟང་ཞིང་དགའ་བ་དེར། །པདྨོ་དམ་པ་ཤིན་ཏུ་མཛེས་ལས་སྐྱེས། །སྣང་བ་མཐའ་ཡས་རྒྱལ་བས་མངོན་སུམ་དུ། །ལུང་བསྟན་པ་ཡང་བདག་གིས་དེར་ཐོབ་ཤོག །</p>
+    <p class="en">In that joyous and excellent maṇḍala of the Victor, may I be born from a supremely beautiful sacred lotus, and directly from the Victor Amitābha — the Infinite Light — may I receive a prophecy and attain that very state!</p>
+    <p class="zh">彼佛殊勝歡喜壇城中，至極莊嚴聖蓮花中生，無量光佛親見面授記，願我亦於彼處得成就！</p>
+  </article>
+
+  <article class="verse">
+    <span class="verse-label">Auspiciousness of Tārā · 度母吉祥</span>
+    <p class="tib">བདག་གིས་ཚེ་རབས་སྔོན་ནས་བསྒྲུབས་པའི་ལྷ། །དུས་གསུམ་སངས་རྒྱས་ཀུན་གྱི་འཕྲིན་ལས་མ། །སྔོ་ལྗང་ཞལ་གཅིག་ཕྱག་གཉིས་མྱུར་ཞིང་དཔའ། །ཡུམ་གྱུར་ཨུཏྤལ་བསྣམས་པའི་བཀྲ་ཤིས་ཤོག །</p>
+    <p class="en">The deity I have practised since lives gone by, Activity-Mother of all the Buddhas of the three times, emerald green, with one face and two arms, swift and courageous, the Mother who holds the utpala — may there be auspiciousness!</p>
+    <p class="zh">我從宿世所修之本尊，三世諸佛一切事業母，翠綠一面二臂速且勇，佛母手持鄔波羅吉祥！</p>
+  </article>
+</section>
+
+
+<!-- ============ XIV. VAJRASATTVA ============ -->
+<section class="section" id="vajrasattva">
+  <div class="section-header">
+    <div class="section-num">XIV · Section Fourteen</div>
+    <h2 class="section-title-en">The Hundred-Syllable Mantra</h2>
+    <p class="section-title-zh">金剛薩埵百字明咒</p>
+  </div>
+
+  <article class="verse mantra">
+    <span class="verse-label">Recite Three Times · 念誦三遍</span>
+    <p class="tib" style="font-size:1.15em">ཨོཾ་བཛྲ་སཏྭ་ས་མ་ཡ། མ་ནུ་པཱ་ལ་ཡ། བཛྲ་སཏྭ་ཏྭེ་ནོ་པ་ཏིཥྛ། དྲྀ་ཌྷོ་མེ་བྷ་ཝ། སུ་ཏོ་ཥྱོ་མེ་བྷ་ཝ། ཨ་ནུ་རཀྟོ་མེ་བྷ་ཝ། སུ་པོ་ཥྱོ་མེ་བྷ་ཝ། སརྦ་སིདྡྷི་མྨེ་པྲ་ཡཙྪ། སརྦ་ཀརྨ་སུ་ཙ་མེ། ཙིཏྟཾ་ཤྲེ་ཡཿ་ཀུ་རུ་ཧཱུྃ། ཧ་ཧ་ཧ་ཧ་ཧོཿ བྷ་ག་ཝཱན་སརྦ་ཏ་ཐཱ་ག་ཏ་བཛྲ་མཱ་མེ་མུཉྩ། བཛྲཱི་བྷ་ཝ་མ་ཧཱ་ས་མ་ཡ་སཏྭ་ཨཱཿ</p>
+    <p class="en" style="text-align:left">Oṃ Vajrasattva Samaya Manupālaya · Vajrasattva Tvenopatiṣṭha · Dṛḍho Me Bhava · Sutoṣyo Me Bhava · Anurakto Me Bhava · Supoṣyo Me Bhava · Sarva Siddhim Me Prayaccha · Sarva Karma Suca Me · Cittaṃ Śreyaḥ Kuru Hūṃ · Ha Ha Ha Ha Hoḥ · Bhagavān Sarva Tathāgata · Vajra Mā Me Muñca · Vajrī Bhava Mahāsamayasattva Āḥ</p>
+    <p class="zh">唵！金剛薩埵，護汝三昧耶！金剛薩埵，於我前住！為我堅固，為我歡喜，為我慈愛，為我增長。賜予我一切悉地，一切業中令我心善。吽！哈哈哈哈呵！薄伽梵 一切如來金剛——勿捨棄我！令我成為金剛持，大三昧耶薩埵。阿！</p>
+  </article>
+</section>
+
+
+<!-- ============ XV. FORGIVENESS ============ -->
+<section class="section" id="forgiveness">
+  <div class="section-header">
+    <div class="section-num">XV · Section Fifteen</div>
+    <h2 class="section-title-en">Prayer for Forgiveness</h2>
+    <p class="section-title-zh">懺悔祈請</p>
+    <p class="section-title-tib">བཟོད་གསོལ།</p>
+  </div>
+
+  <article class="verse">
+    <p class="tib">མ་འབྱོར་བ་དང་ཉམས་པ་དང་། །གང་ཡང་བདག་རྨོངས་བློ་ཡིས་ནི། །བགྱིས་པ་དང་ནི་བགྱིས་སྩལ་བ། །དེ་ཀུན་མགོན་པོས་བཟོད་པར་མཛོད། །</p>
+    <p class="phon">Ma-jor-wa dang nyam-pa dang / Gang-yang dak-mong lo-yi ni / Gyi-pa dang-ni gyi-tsal-wa / Dé-kün gön-pö zö-par dzö</p>
+    <p class="en">For what was incomplete and what has declined, for whatever I, in my deluded mind, have done or caused others to do — O Protector, please bear with it all!</p>
+    <p class="zh">諸未圓備及衰損，凡因我愚癡心故，自作及教他所作，一切怙主祈寬恕！</p>
+  </article>
+</section>
+
+
+<!-- ============ XVI. REQUEST TO REMAIN ============ -->
+<section class="section" id="remain">
+  <div class="section-header">
+    <div class="section-num">XVI · Section Sixteen</div>
+    <h2 class="section-title-en">Request to Remain · Departure of the Wisdom Beings</h2>
+    <p class="section-title-zh">祈請安住 · 智慧尊回歸</p>
+  </div>
+
+  <article class="verse">
+    <span class="verse-label">With Sacred Image · 有聖像時</span>
+    <p class="tib">ཇི་སྲིད་འབྱུང་བ་བཞིའི་གནོད་པས་མ་ཞིག་གི་བར་དུ། རྟེན་འདི་རྣམས་ལ་བརྟན་པར་བཞུགས་ནས། བདག་དང་སེམས་ཅན་ཐམས་ཅད་ལ་མཆོག་དང་ཐུན་མོང་གི་དངོས་གྲུབ་བསྩལ་དུ་གསོལ། ཨོཾ་སུ་པྲ་ཏིཥྛ་བཛྲ་ཡེ་སྭཱ་ཧཱ།</p>
+    <p class="en">So long as these representations are not destroyed by the harm of the four elements, please remain steadfast within them, and bestow upon myself and all sentient beings the supreme and common accomplishments! <strong>OṂ SUPRATIṢṬHA VAJRAYE SVĀHĀ!</strong></p>
+    <p class="zh">直至四大不壞損毀間，祈請堅固安住此聖像，並賜我與一切有情眾，殊勝共同二種之悉地！唵 蘇巴帝叉 嚩日囉耶 娑婆訶！</p>
+  </article>
+
+  <article class="verse">
+    <span class="verse-label">Without Image · 無聖像時</span>
+    <p class="tib">ཨོཾ། ཁྱེད་ཀྱིས་སེམས་ཅན་དོན་ཀུན་མཛོད། །རྗེས་སུ་མཐུན་པའི་དངོས་གྲུབ་སྩོལ། །སངས་རྒྱས་ཡུལ་དུ་གཤེགས་ནས་ཀྱང་། །སླར་ཡང་འབྱོན་པར་མཛད་དུ་གསོལ། །ཨོཾ་བཛྲ་མུ།</p>
+    <p class="en"><strong>OṂ!</strong> Please accomplish the welfare of all beings, and bestow the corresponding accomplishments. Though you depart to the Buddha-realms, we pray that you will come again! <strong>OṂ VAJRA MUḤ!</strong></p>
+    <p class="zh">唵！祈為眾生作利益，賜予隨順之悉地。雖已回歸諸佛土，祈請他日再降臨！唵 嚩日囉 目！</p>
+  </article>
+</section>
+
+
+<!-- ============ XVII. DEDICATION ============ -->
+<section class="section" id="dedication">
+  <div class="section-header">
+    <div class="section-num">XVII · Section Seventeen</div>
+    <h2 class="section-title-en">Dedication & Aspiration</h2>
+    <p class="section-title-zh">迴向發願</p>
+    <p class="section-title-tib">བསྔོ་བ་སྨོན་ལམ།</p>
+  </div>
+
+  <article class="verse">
+    <p class="tib">དགེ་བ་འདི་ཡིས་མྱུར་དུ་བདག །རྗེ་བཙུན་སྒྲོལ་མ་འགྲུབ་གྱུར་ནས། །འགྲོ་བ་གཅིག་ཀྱང་མ་ལུས་པ། །དེ་ཡི་ས་ལ་འགོད་པར་ཤོག །</p>
+    <p class="phon">Gé-wa di-yi nyur-du dak / Jé-tsün Dröl-ma drup-gyur né / Dro-wa chik-kyang ma-lü pa / Dé-yi sa-la gö-par shok</p>
+    <p class="en">By this virtue, may I swiftly accomplish the state of Venerable Tārā, and then establish every single being, without even one exception, upon that very ground!</p>
+    <p class="zh">以此善德願我速，成就至尊度母位，一切眾生無有餘，悉皆安置此果地！</p>
+  </article>
+</section>
+
+
+<!-- ============ XVIII. AUSPICIOUSNESS ============ -->
+<section class="section" id="auspicious">
+  <div class="section-header">
+    <div class="section-num">XVIII · Section Eighteen</div>
+    <h2 class="section-title-en">Auspiciousness of the Triple Gem</h2>
+    <p class="section-title-zh">三寶吉祥偈</p>
+    <p class="section-title-tib">བཀྲ་ཤིས།</p>
+  </div>
+
+  <article class="verse">
+    <span class="verse-label">To the Buddha · 佛</span>
+    <p class="tib">སྟོན་མཆོག་དམ་པ་ལྷ་མིས་མཆོད་འོས་པ། །སངས་རྒྱས་ཕྱག་འཚལ་དེང་འདིར་བདེ་ལེགས་ཤོག །</p>
+    <p class="en">The supreme, holy Teacher, worthy of the offerings of gods and humans — homage to the Buddha! May there be auspiciousness, here and now!</p>
+    <p class="zh">最勝聖師天人應供尊——頂禮佛陀，今此獲吉祥！</p>
+  </article>
+
+  <article class="verse">
+    <span class="verse-label">To the Dharma · 法</span>
+    <p class="tib">ཞི་བ་ཆགས་བྲལ་ལྷ་མིས་མཆོད་འོས་པ། །ཆོས་ལ་ཕྱག་འཚལ་དེང་འདིར་བདེ་ལེགས་ཤོག །</p>
+    <p class="en">The peaceful Dharma, free from attachment, worthy of the offerings of gods and humans — homage to the Dharma! May there be auspiciousness, here and now!</p>
+    <p class="zh">寂靜離欲天人應供法——頂禮正法，今此獲吉祥！</p>
+  </article>
+
+  <article class="verse">
+    <span class="verse-label">To the Saṅgha · 僧</span>
+    <p class="tib">ཚོགས་ཀྱི་དམ་པ་ལྷ་མིས་མཆོད་འོས་པ། །དགེ་འདུན་ཕྱག་འཚལ་དེང་འདིར་བདེ་ལེགས་ཤོག །</p>
+    <p class="en">The supreme Assembly, worthy of the offerings of gods and humans — homage to the Saṅgha! May there be auspiciousness, here and now!</p>
+    <p class="zh">眾中殊勝天人應供僧——頂禮僧伽，今此獲吉祥！</p>
+  </article>
+
+  <article class="verse">
+    <span class="verse-label">For the Teachings · 聖教</span>
+    <p class="tib">བསྟན་པའི་དཔལ་གྱུར་བླ་མའི་ཞབས་པད་བརྟན། །བསྟན་འཛིན་སྐྱེས་བུའི་ས་སྟེང་ཡོངས་ལ་ཁྱབ། །བསྟན་པའི་སྦྱིན་བདག་མངའ་ཐང་འབྱོར་བ་རྒྱས། །བསྟན་པ་ཡུན་རིང་གནས་པའི་བཀྲ་ཤིས་ཤོག །</p>
+    <p class="en">May the lotus feet of the Gurus, the glory of the teachings, stand firm! May the holders of the teachings fill the entire earth! May the power and wealth of the patrons of the teachings increase! May the teachings endure for ages — let there be auspiciousness!</p>
+    <p class="zh">教法榮光上師蓮足堅，持教士夫遍滿於大地，教法施主權勢財富增，聖教長久住世願吉祥！</p>
+  </article>
+</section>
+
+
+<!-- ============ XIX. SPIRITS ============ -->
+<section class="section" id="spirits">
+  <div class="section-header">
+    <div class="section-num">XIX · Section Nineteen</div>
+    <h2 class="section-title-en">Prayer for Spirits & Local Guardians</h2>
+    <p class="section-title-zh">迴向地神鬼神</p>
+  </div>
+
+  <article class="verse">
+    <p class="tib">འབྱུང་པོ་གང་དག་འདིར་ནི་ལྷགས་གྱུར་ཏེ། །སའམ་ཡང་ན་བར་སྣང་འཁོད་ཀྱང་རུང་། །སྐྱེ་རྒུ་ཡོངས་ལ་རྟག་ཏུ་བྱམས་བྱེད་པའི། །ཉིན་དང་མཚན་མོ་ཆོས་ལ་སྤྱོད་པར་ཤོག །</p>
+    <p class="phon">Jung-po gang-dak dir-ni lhak-gyur té / Sa-am yang-na bar-nang khö-kyang rung / Kyé-gu yong-la tak-tu jam-jé pé / Nyin-dang tsen-mo chö-la chö-par shok</p>
+    <p class="en">Whatever spirits have gathered in this place, whether dwelling on the earth or in the sky above — may they always show loving-kindness to all living beings and practise the Dharma day and night!</p>
+    <p class="zh">凡此處所聚諸鬼神，或住地上或居虛空中，願於一切眾生常慈愛，晝夜恆時修習正法行。</p>
+  </article>
+</section>
+
+
+<!-- ============ XX. FINAL AUSPICIOUSNESS ============ -->
+<section class="section" id="final">
+  <div class="section-header">
+    <div class="section-num">XX · The Final Verse</div>
+    <h2 class="section-title-en">Final Auspiciousness</h2>
+    <p class="section-title-zh">究竟吉祥偈</p>
+  </div>
+
+  <article class="verse">
+    <p class="tib">གནས་འདིར་ཉིན་མོ་བདེ་ལེགས་མཚན་བདེ་ལེགས། །ཉི་མའི་གུང་ལ་ཡང་བདེ་ལེགས་ཤིང་། །ཉིན་མཚན་རྟག་ཏུ་བདེ་ལེགས་པ། །དཀོན་མཆོག་གསུམ་གྱིས་བཀྲ་ཤིས་ཤོག །</p>
+    <p class="phon">Né-dir nyin-mo dé-lek tsen dé-lek / Nyi-mé gung-la yang dé-lek shing / Nyin-tsen tak-tu dé-lek pa / Kön-chok sum-gyi tra-shi shok</p>
+    <p class="en">In this place — happiness by day, happiness by night, happiness also at the midday hour! Happiness always, day and night — by the Three Jewels, may there be auspiciousness!</p>
+    <p class="zh">此處晝吉祥，夜亦吉祥，正午時分亦吉祥，晝夜恆時皆吉祥——三寶威力願吉祥！</p>
+  </article>
+
+  <div class="double-line"></div>
+</section>
+
+
+<!-- ============ COLOPHON ============ -->
+<footer class="colophon">
+  <div class="colophon-rule"></div>
+  <div class="seal">❖</div>
+  <p>The Sadhana of the Four-Mandala Ritual of Ārya Tārā</p>
+  <p>《至尊聖度母四壇城供養儀軌》</p>
+  <p style="margin-top:1.2rem">Compiled and Edited by <em>Khenpo Kunga Rinchen</em></p>
+  <p>堪布 根嘎仁波切 編校</p>
+  <div class="colophon-rule"></div>
+  <p style="font-size:0.85rem; color:var(--ink-faint); margin-top:1.5rem">
+    སརྦ་མངྒ་ལཾ ·  May all beings find liberation · 願一切眾生獲得解脫
+  </p>
+</footer>
+
+</main>
+</div>
+
+<button class="top-btn" id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">▲</button>
+
+<script>
+  // Reading progress bar
+  const progressFill = document.getElementById('progressFill');
+  const topBtn = document.getElementById('topBtn');
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+    progressFill.style.width = scrolled + '%';
+    if (h.scrollTop > 600) topBtn.classList.add('show');
+    else topBtn.classList.remove('show');
+  });
+
+  // Section reveal on scroll
+  const sections = document.querySelectorAll('.section');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.05, rootMargin: '0px 0px -10% 0px' });
+  sections.forEach(s => io.observe(s));
+
+  // Active TOC highlight
+  const tocLinks = document.querySelectorAll('aside.toc a');
+  const idMap = {};
+  tocLinks.forEach(a => idMap[a.getAttribute('href').slice(1)] = a);
+
+  const activeIO = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = entry.target.id;
+      if (entry.isIntersecting && idMap[id]) {
+        tocLinks.forEach(a => a.classList.remove('active'));
+        idMap[id].classList.add('active');
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px' });
+
+  document.querySelectorAll('section[id], footer[id]').forEach(s => activeIO.observe(s));
+
+  // Close mobile menu on link click
+  document.querySelectorAll('aside.toc a').forEach(a => {
+    a.addEventListener('click', () => {
+      if (window.innerWidth < 900) document.querySelector('aside.toc').classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>
